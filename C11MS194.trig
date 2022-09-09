@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS194 {
+    bda:C11MS194  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS194 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5e/C11MS194.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS194 ;
+        adm:logEntry        bda:LGDD34529F4A2D7AAF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGDD34529F4A2D7AAF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:02:14.786Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS194  a         :Corporation ;
+        skos:altLabel       "Trokho Numai Pelshul"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "khro kho nu ma'i dpal shul/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM553683DC337402DA ;
+        :note               bdr:NT4524A2FF37265863 .
+    
+    bdr:CM553683DC337402DA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5418 .
+    
+    bdr:NT4524A2FF37265863
+        a                   :Note ;
+        :noteText           "The Sixth Hortsang Sertri Lobzang Pelden Gyatso was born in the clan of Trokho Numai Pelshul in Darlung (dar lung) near Yumik (g.yu rmig) in Amdo in 1913."@en .
+}

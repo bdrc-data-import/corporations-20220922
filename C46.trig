@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C46 {
+    bda:C46  a              adm:AdminData ;
+        adm:adminAbout      bdr:C46 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b5/C46.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C46 ;
+        adm:logEntry        bda:LGDF00009299F38497 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGDF00009299F38497
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C46  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:altLabel       "rgyal rtse lcang lo can (sku drag)"@bo-x-ewts ;
+        skos:prefLabel      "lcang lo can (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMA1821358F3959300 , bdr:CMEA67E59ED14C8103 ;
+        :note               bdr:NT71DF87A4D4BB4C02 .
+    
+    bdr:CMA1821358F3959300
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6692 .
+    
+    bdr:CMEA67E59ED14C8103
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6693 .
+    
+    bdr:NT71DF87A4D4BB4C02
+        a                   :Note ;
+        :contentLocationStatement  "p. 200" ;
+        :noteSource         bdr:MW20167 ;
+        :noteText           "one of the foremost families of gtsang\nfrom the village of lcang lo can near rgyal rtse\ndescended from si tu rab brtan kun bzang 'phags"@en .
+}

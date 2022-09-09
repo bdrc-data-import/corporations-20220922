@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS175 {
+    bda:C11MS175  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS175 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "55/C11MS175.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS175 ;
+        adm:logEntry        bda:LG1FECA0F5016B5EE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1FECA0F5016B5EE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T11:16:52.976Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS175  a         :Corporation ;
+        skos:altLabel       "Ja"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "bya/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM41D92567CB49C904 , bdr:CM5054C4A3F7DB1205 ;
+        :note               bdr:NTD1B0263CDE69D822 .
+    
+    bdr:CM41D92567CB49C904
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P870 .
+    
+    bdr:CM5054C4A3F7DB1205
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3447 .
+    
+    bdr:NTD1B0263CDE69D822
+        a                   :Note ;
+        :noteText           "An old clan. Already in existence during the Pugyel dynasty."@en .
+}

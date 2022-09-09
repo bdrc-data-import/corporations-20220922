@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11026 {
+    bda:C2CN11026  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11026 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "85/C2CN11026.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11026 ;
+        adm:logEntry        bda:LG4F7C685E87AA3F6C , bda:LG9C0DB9F68B66E146 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F7C685E87AA3F6C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-28T13:43:29.911Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 2 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9C0DB9F68B66E146
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-28T13:45:42.492Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11026  a        :Corporation ;
+        skos:altLabel       "shab smad gnubs nam mkha'i snying po'i gdung rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "shab smad gnubs rigs/"@bo-x-ewts , "gtsang Shab smad Lineage of Gnubs Nam mkha'i snying po"@en ;
+        :corporationHasMember  bdr:CM15A87F0C0F533BCF , bdr:CMF40B6668986745FC ;
+        :note               bdr:NT803C7F0B89DBB34E , bdr:NTEF19617F7BF16302 .
+    
+    bdr:CM15A87F0C0F533BCF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1507 .
+    
+    bdr:CMF40B6668986745FC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1508 .
+    
+    bdr:NT803C7F0B89DBB34E
+        a                   :Note ;
+        :noteText           "need to add region as shab gzhung: G546"@en .
+    
+    bdr:NTEF19617F7BF16302
+        a                   :Note ;
+        :noteText           "see also G953"@en .
+}

@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C16 {
+    bda:C16  a              adm:AdminData ;
+        adm:adminAbout      bdr:C16 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "70/C16.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C16 ;
+        adm:logEntry        bda:LG469A5D7DAEA15F1C , bda:LG964023E31513CAA2 , bda:LG9E0B7411A9C45401 , bda:LGABB61B3DA19BECCC , bda:LGF6E7CED9AFFBC67F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG469A5D7DAEA15F1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG964023E31513CAA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-09-16T12:07:30.2Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9E0B7411A9C45401
+        a                   adm:UpdateData .
+    
+    bda:LGABB61B3DA19BECCC
+        a                   adm:UpdateData .
+    
+    bda:LGF6E7CED9AFFBC67F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:57.017Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C16  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:prefLabel      "skyid stod (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM29D425B4D2FC757E , bdr:CM858DA2849664F6CE ;
+        :corporationRegion  bdr:G555 ;
+        :note               bdr:NT985D68109A7D32DA .
+    
+    bdr:CM29D425B4D2FC757E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS256 .
+    
+    bdr:CM858DA2849664F6CE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS255 .
+    
+    bdr:NT985D68109A7D32DA
+        a                   :Note ;
+        :noteText           "The Kyitod house, whose ancestral estates were in Tsangrong, first entered the higher circle of the Tibetan administration with Kyitod nas Sonam Phuntsok, whom the Dalai Lama in 1751 appointed governor of Western Tibet (Tod garpon) together with Zholkhangpa; after some reluctance the appointment was confirmed by the emperor. He was still in charge at the end of 1754.\nA Zholnyer Kyitodpa accompanied Kalon Shadra on his mission to Drakyab in 1847-1848. He is probably not the same as the Kyitod Dorje Dondup who sometime between 1851 and 1853 was sent to Kham to procure the copper neccessary for the repairs at Samye. In 1853 he was a Phogpon and again accompanied Shadra, this time to Tawang; the emperor rewarded him with the 3rd rank button. Some years later he entered the Kashag; he appears as Kalon on 21. Ii. 1858, when he was sent as commissioner to the Gyade region. It is diffcult to say what was the trouble there, as the Chinese texts seem to be silent about it; it may have been a local affair. Anyway, in the middle of 1859 the emperor have been a local affair. Anyhow, in the middle of 1859 the emperor granted him title and seal of taiji on account of the work done as commissioner in Khanpo Kar and Khyunpo nag. And this is the last we hear about him.\nit seems that this house died out in the following years and their estates passed to the Rampa family; some of the members of the latter been the name Kyitod without, it appears, forming a special branch.\n\n(Petech L., Aristocracy and Government in Tibet, p. 91-92, Roma 1973)"@en .
+}

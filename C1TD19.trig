@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C1TD19 {
+    bda:C1TD19  a           adm:AdminData ;
+        adm:adminAbout      bdr:C1TD19 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9d/C1TD19.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C1TD19 ;
+        adm:logEntry        bda:LG35224227D589C23A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35224227D589C23A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-14T17:37:24.979Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:C1TD19  a           :Corporation ;
+        skos:prefLabel      "sa 'du tshang /"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM83EFBC5FC1EBA46C , bdr:CMAEA74D26419D712B ;
+        :note               bdr:NT078B68634094C83D .
+    
+    bdr:CM83EFBC5FC1EBA46C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1TD17 .
+    
+    bdr:CMAEA74D26419D712B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1TD18 .
+    
+    bdr:NT078B68634094C83D
+        a                   :Note ;
+        :contentLocationStatement  "p.208" ;
+        :noteSource         bdr:MW1KG6057 ;
+        :noteText           "along with the spom mda' tshang and Reting estate, was one of the three largest trading family firms of 20th century Tibet\n\na trading family from Kandze area in Kham that settled in Lhasa"@en .
+}

@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C7 {
+    bda:C7  a               adm:AdminData ;
+        adm:adminAbout      bdr:C7 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "51/C7.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C7 ;
+        adm:logEntry        bda:LG427EB59343D71E8B , bda:LGF3B0222E200695AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG427EB59343D71E8B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF3B0222E200695AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:06.524Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C7  a               :Corporation ;
+        rdfs:comment        "yab gzhis family"@en ;
+        skos:altLabel       "lha klu dga' tshal 2 (yab gzhis)"@bo-x-ewts ;
+        skos:prefLabel      "lha klu 2 (yab gzhis)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM00D5D7F76FC3E409 , bdr:CM030D5BA06AF4F890 , bdr:CM41ED3B48BE3BD616 , bdr:CM521BBBB4E5C03A4F , bdr:CM63B18871C8FFDB3A , bdr:CMB24CF208868C61F5 , bdr:CMC8A23D1E9DDF2302 , bdr:CMCB862050ABFC3FFC , bdr:CMCF4B233A3985B6F7 , bdr:CMEDAA98B772244DFC ;
+        :corporationRegion  bdr:G1101 ;
+        :note               bdr:NT800ED1A4E2621425 .
+    
+    bdr:CM00D5D7F76FC3E409
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6725 .
+    
+    bdr:CM030D5BA06AF4F890
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS182 .
+    
+    bdr:CM41ED3B48BE3BD616
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS181 .
+    
+    bdr:CM521BBBB4E5C03A4F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS179 .
+    
+    bdr:CM63B18871C8FFDB3A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6715 .
+    
+    bdr:CMB24CF208868C61F5
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS215 .
+    
+    bdr:CMC8A23D1E9DDF2302
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS184 .
+    
+    bdr:CMCB862050ABFC3FFC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS183 .
+    
+    bdr:CMCF4B233A3985B6F7
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P244 .
+    
+    bdr:CMEDAA98B772244DFC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS214 .
+    
+    bdr:NT800ED1A4E2621425
+        a                   :Note ;
+        :noteText           "Full name of the family is Lhalu Gatsal. This is the family of the 12th Dalai Lama and was founded by his father Phuntsok Tsewang. In order to save government estates from being allowed to the new yabzhi family, in 1858 the government ordered the father and relatives of the 12th Dalai Lama to live with the family of the 8th; the two houses were merged into one by matrimonial ties. In 1859 the emperor granted to Phuntsok Tsewang the title of Kung. His name occurs pretty often in the 12th Dalai Lama during the following years, always on the usual formal occasions. He died in the 3rd month of 1865.\nPhuntsok Tsewang had three sons, of whom the Dalai Lama was the youngest. The eldest, Yeshe Norbu Wangchuk, is occasionally mentioned in 1856, 1860 and 1865, The emperor sanctioned his succussion to the title of his father; the decree was dated 2nd August 1865 and not having been received in Tibet on account of the troubles in Nyagrong, was renewed on 20th January 1866. This second document was received in Lhasa on 25.I (early March), 1866. About that time he collaborated in the case against Thutop Lungpa and fought against the Nyagrong rebels, for which in 1868 he was granted the third rank and the peacock feather. He is often mentioned in the lifetime of his brother; later, on account of his prestige and connections, he became the foremost figure of the Tibetan government during the late seventies and the eighties of the 19th century. In 1875-1876 he was entrusted with the supervision of the building of the Dalai Lama's tomb on the roof of the Potala. As the Lhalu gung he is mentioned in 1877 and 1878. About 1880 he was appointed Kalon, appearing as such at the end of 1881 when he was sent along with Kalon Rampawa to settle a trouble which had arisen in Tsang. Late in October 1881 the junior amban Wei-ch'ing had been sent to inspect the garrison of Tingkye. Both on the journey and during his prolonged stay at Shigatse he demanded travel allowances which were far in excess of the customary ones. The Tsipon Cangcan, who accompanied him as Neshen, uas unable to extort such vast sums from the peasantry, and the result was a riot, in which the mob, let by the two Zongpon of Shigatse, stoned the Chinese soldiers. The infuriated amban had the Tsipon arrested and flogged, but was attacked by the people and his life was saved only by the people and his life was saved only by the timely arrival of Dapon Phala. Some days later the senior amban Selung and the Kalon Lhalu and Rampa arrived at Shigatse and investigated the matter, judgement being delivered on 12th December. The two Zongpon were degraded both in rank and post; the village headmen were punished by flogging and imprisoning. As to We-ch'ing, his case was referred to Peking; but although the Chinese government recognised that his dealings were both corrupt and high-handed, they threw the blame on his uderlings and on the Tibetan officials. After having settled this question, Lhalu visited the Panchen and on the 23rd december left for Lhasa. \nSome time later he was entrusted with a much more difficult case. On 8th April 1883, at the end of the Monlam festival in Lhasa, a petty dispute between a Newari trader and two Tibetan women resulted in a serious riot, during which 85 Nepalese shops were looted and some of the owners were beaten. There was considerable loss of property, for which the Nepalese government requested compensation, to the amount of Rs. 1,700,000. The Kashag accepted the principle, but offered a much smaller sum. The situation grew so tense, that war seemed inevitable; the Nepalese collected an expeditionary forces, which was intended to invade Tibet by the Wallung pass in eastern Nepal and was to be commanded by general Padma Shamsher Jang Bahadur. The imperial government was duly informed about the tense situations, but the only measure taken was the despatch of a minor official called Ting Shih-chin sent to Lhasa to collaborate with the amban Seleng. In November 1883 the ambab appointed a commission composed of the Chinese official Chao Hsien-chung of the Kalon Lhalu and Rampa an of the Nepalese representative (\"Captain\") in Lhasa, to conduct negotiation with a Nepalese delegation at Kirong. After a long haggling, the two delegation signed an agreement on 26th May 1884, by which Tibet agreed to pay Rs. 942,098 as compensation, in annual instalments over a seven-years period. For this purpose the Szechwan treasury advanced 80,000 tacls (=c. Rs. 400,000) to the Lhasa government. And thus peace was preserved. Chao Hsien-chung was duly commended for his part is it. Yeshe Norbu Wangchuk, on the contarry, earned little thank; in 1886 he was described by the imperial government as obtuse and ineffecient and was considered with some suspicion.\nAbout this time another problem was comming to the force, in the shape of British penetration in Sikkim and subsquent friction on the ill-defined border. The situation gradually grew to a climax, and the Tibetan frontier forces were forcibly expelled from Lun-t'ur on 21st March 1888. When the news of the defeat reached Lhasa, Yeshe Norbu Wangchuk was appointed overall commander of the Tibetan forces on the Sikkim frontier, with headquarters at Gyantse; he set out from Lhasa on the 28.II (c. 9th April). His activity in his new assignement receives a flood of light from the Chinese documents, but was not particularly successful. On 22nd May he launched an attack on the British camp at Nedong, where he narrowly missed capturing the lieutenant-governor of Bengal, but was driven back with some loss; thereupon he returned to Phagri. On 24th September General Graham attacked and dispersed a Tibetan concentration at Nedong, and Lhalu fled to Rinchengang in the Chumbi valley; the Chinese complaint peevishly of his indecision. In july 1889 he was still commander-in -chief on the Sikkim border. In the following year a proceeding was instituted against him, but was quashed on account of the good work he had done at Lhasa after his return there. He died on 6th December 1891.\nHis younger brother Khyenrab Lodo Jigme was zhabsarpa in 1861. He is mentioned again in 1867 and at the time of the demise of the Dalai Lama in 1875.\nIt is difficult to say who was the Lhalu Donnyer Tseten Phuntsok mentioned in 1875.\nThe son of yabzhi Lhalu received the title of kung in 1892. He was about 20 years old in 1904, when his house in Lhasa became the headquarters of the British mission. He died in 1918; in the 9th month of 1919 his widow caused a gilt pinnacle to be made for the Trulnang, as an offering for the deceased.\nA young brother of his was given in 1891 the name Jigme Namgyal; he died ca. 1912.\nThe Lhalu se Phuntsok Gyalpo (b. 1883), who entered the service in 1906, was given the title of jasak in 1923 and was Zholnyer in 1924, is something of a mysterym being difficult to fit in the family tree; perhaps he was yet another brother of the duke.\nThe Kung who died in 1918 had divorced his first wife and married a lady from the Thon family; as he had no male offspring of his own, he took into the Lhalu house the son of his second wife, who was an illegitimate child of kung Langdun and thus a half-brother of Sridlon Langdun. This boy, by name Phuntsok Rabgye, was given the title of kung at the begining of 1919; but he died at the age of 16 shortly before the arrival of Sir Charles Bell in 1920.\nThe Lhalu Lhacham, i.e. the widow of the old duke, remained unmarried for some years. She had fallen in love with Tsipon Lungshar, one of the most influential men in Tibet. A marriage was out of question, as it would have meant the extinction of one of the two houses. Thus in about 1924 in order to ensure the survival of the Lhalu family, she adopted Lhungshar's younger son, aged 14, by name Tsewang Dorje (b.c. 1910). He entered service in 1927 and was dismissed in 1934, when Lungshar was imprisoned and blinded; however, the Lhulu Lhacham saved him from heavier punishment. He was re-admitted into service and in 1937 was appointed Kadron. In 1940 he married a lady of the Thonpa family. In 1941 he was promoted to the fourth rank and appointed Tsipon. This was still his rank in November 1946, when he escaped an attempt on his life by some attendatnts of the fromer regent Rateng. In December of the same year he became a Kalon and shortly after was concurrently appointed Dochi. However, he stayed on in Lhasa for some time, and in April 1947 he helped Zurkhang Zhabpad to arrest the former regent. Not before the summer of 1947 did he leave for Kham. In july 1950 he was recalled from Chamdo and left for Lhasa in September. In 1952 he was dismissed from Kashag. In 1959 he was prominent among the Tibetan officials who advised resistance against the Chinese and took active part in it. After the collapse of the revolt he was arrested and subjected to a public trial, after which he was held for five years in a labour camp. \nAs to the old Lhalu Lhacham, the real mainstay of the family, she died in Lhasa a few years after 1959. \n(Petech L., Aristocracy and Government in Tibet, p. 43-49, Roma 1973. Also see Yab gzhis lha klu'i khyim tshang gi lo rgyus skor in Bod kyi lo rgyus rig gnas dpyad gzhi'i rgyu cha bdams bsgrigs : 16)"@en .
+}

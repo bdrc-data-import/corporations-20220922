@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C1 {
+    bda:C1  a               adm:AdminData ;
+        adm:adminAbout      bdr:C1 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "1a/C1.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C1 ;
+        adm:logEntry        bda:LG3EE3DD277F0A15A6 , bda:LGAD95D8DC86690FCB , bda:LGE00E23B3D66F3F4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3EE3DD277F0A15A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-07T14:21:14.309Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LGAD95D8DC86690FCB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE00E23B3D66F3F4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:49.484Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C1  a               :Corporation ;
+        rdfs:comment        "yab gzhis family"@en ;
+        skos:prefLabel      "glang mdun (yab gzhis)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM2B0540E276FB5DC4 , bdr:CM8166D8F547C8220F , bdr:CMB71EF278AA02337E , bdr:CMDCD0949DAFDA27BD , bdr:CME4512919AE9C9D8E , bdr:CMEC1DABC290BE0775 ;
+        :corporationRegion  bdr:G1390 ;
+        :note               bdr:NT7DD9D48BDB5A3582 .
+    
+    bdr:CM2B0540E276FB5DC4
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6682 .
+    
+    bdr:CM8166D8F547C8220F
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6681 .
+    
+    bdr:CMB71EF278AA02337E
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6680 .
+    
+    bdr:CMDCD0949DAFDA27BD
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P7067 .
+    
+    bdr:CME4512919AE9C9D8E
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P197 .
+    
+    bdr:CMEC1DABC290BE0775
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS149 .
+    
+    bdr:NT7DD9D48BDB5A3582
+        a                   :Note ;
+        :noteText           "This is the family of the 13th Dalai Lama. Its founder was the Dalai Lama's father kunga rinchen, a farmer from langdun, a village at the foot of the daklha gampo mountain in Dakpo. On 12th April 1879 the emperor granted him the title of gung, to which on the 10th August 1879 the jewel button and the peacock feathers were added. His name is not much to the force during the following years; but he was a man of great common sense, and in the tshokdu his advice was usually followed. Thus when about 1884 a case was brought against the falha family, who had protected Sarat Chandra Dar and had allowed him to come to Lhasa in their train, Kunga rinchen voted against the wholesale confiscation of their landed property, which would have benefited the clergy only, and succeded in limiting the fine to the escheat of their largest estate; it was then let out to the falha at a high rental, much to the advantage of the state treasury. He died in 1887, leaving five sons.\n\tThe eldest was Dondup Dorjee, who in 1888 was granted the title Gung with the jewel button and the peacock feathers. He played no conspicuous role, except for the hostile position he took in 1901 toward the Japanese monk Kawaguchi. Still, his influence behind the scenes must have been considerable. A tradition current in Lhasa attributes to him, in conjuction with the Naschung chokyong, the dismissal of the whole Kashag in 1903. he arranged fisrt for meeting of officials, at which some of them were put up to criticise the Kalon and then putting about a story that the Dalai Lama wanted to go into retirement because of the incapacity of his ministers. The solution which the Drepung abbots put forward was that all the four Kalon should resign. At least this story seems to embody a tradition that the Gung was more than a nonentity. In 1904 he fled from Lhasa along with the Dalai Lama and in 1905 he was in Urga. He is said to have died in Tsaidam in 1909.\n\tThe second brother Losang Tashi entered the official career in the monastic branch, but then left it to become a magpa in the Drumpa family.\n\tThe third brothe Jampa Namgyal palzang appears for the first time in 1900 and was appointed Zimpon khanpo on 10 XII of that year, i.e. in January 1901. He came out to meet the Dalai Lama returning to Lhasa late in 1909. At the begining of 1912 he paid him a visit at Darjeeling and then returned to the capital. He appears to have died soon after. \n\tThe fourth brother was the 13th Dalai Lama.\n\tThe fifth brother Jampal Wangchuk was recognised as the reincarnation of the Sharpa choje Ngawang tsutrim some time before 1886, and as such was enrolled in the Sera mad college. His name occurs again in 1892 and 1893. He is said to have died about 1906.\n\tDondup Dorje's son Kunga Wangchuk (b.1906) is apparently the yabzhi Langdun who at the begining of 1913 greeted the Dalai Lama returning to Lhasa from his Indian exile; he is mentioned also in 1923. In 1924 he was appointed joint Sridlon and at the begining of 1926 received the appointment as full Sridlon. But his influence in politics was always less and decreased after the death of his august uncle , who biography he sponsored. At that time he was described as a rather stiff and uncomunicative young official. In April 1939 he ceased to fulfill the duties of his office and retired from political activity, although maintaining the title and the salary attached thereto.\n\t\tAfter the Tibetan-Chinese agreement of 1951, Kunga Wangchuk adapting himself to the changed circumstances, started on a fresh career. In 1956 he became a member of the Preparatory Committee for the Tibetan Autonomous Region.  After the flight of the Dalai Lama, he maintained and even enhanced his position: in 1959 he was elected Deputy Chairman of the First Committee for Tibet of the CPPCC and in the following year he became a member of the Standing Committee of the Preparatory Commission. In 1962 he entered the Election Committee for the Autonomous Region; and when in 1965 the Autonomous Region was inaugurated, he was elected member of its first People's Congress. He was also one of the deputy chairman of the Government (People's Council) of the Tibetan Autonomous Regions untill its supersession in September 1968; but he was excluded from the Regional Revolutionary Committee which took its place. Thus it seems that, whatever his real political influence was, he always managed to stay in, or to re-enter, the topmost layer of the Tibetan government of the day. No information later than 1968 is available. (Petech L; Aristocracy and Government in Tibet : 1728-1959, p. 23-25, Roma 1973)\n\t\n\tLangdun family was located in the dakpo area of Tsang. The family was orginaly government tax payer family. In the late nineteenth century, this family gave birth to one of the most powerful dalai lama of tibet that is the 13th dalai lama Thubten Gyatso in 1876 and thereafter became well known yabzhi family. (Zhwa sgab pa dbang phyug bde ldan, bod kyi srid don rgyal rabs, vol. II, p. 60)\n\tLangdun Kunga Wangchuk was called Lonchen Yapshi Landun Kung. Born in 1906. The son of the eldest brother of the 13th Dalai Lama. Appointed Prime Minister in 1926. Ranks next to the Regent. As he has never left Lhasa until 1942 he was rather inexperienced, but he was said to be very popular with the people of Lhasa. In April 1939, he was deprived of his offcial duties but allowed to retain his rank. ( Who's Who in Tibet : 1945, pp. 34)"@en .
+}

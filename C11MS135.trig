@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS135 {
+    bda:C11MS135  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS135 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e8/C11MS135.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS135 ;
+        adm:logEntry        bda:LG07D2844A68C519F0 , bda:LG8B844F32FE6FA9EC , bda:LGF760278AF62A905E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C68 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG07D2844A68C519F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-21T16:36:15.897Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8B844F32FE6FA9EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:56:59.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF760278AF62A905E
+        a                   adm:WithdrawData ;
+        adm:logDate         "2016-11-15T16:08:56.833Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavour of C68"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C11MS135  a         :Corporation ;
+        skos:prefLabel      "shar kha pa/"@bo-x-ewts ;
+        :note               bdr:NTB9434E2123901EF4 , bdr:NTCBF0FFD963A1E553 .
+    
+    bdr:NTB9434E2123901EF4
+        a                   :Note ;
+        :noteText           "princely family gtsang, ruled from their fort at rgyal rtse."@en .
+    
+    bdr:NTCBF0FFD963A1E553
+        a                   :Note ;
+        :noteText           "The Sharkhapa family was one of the princely families of Gyantse. Members of this family ruled a large area of Tsang provice from their fortress at Gyantse (rgyal rtse). Drubchen Kunga Lodro was born into the Sharkhapa family in 1365."@en .
+}

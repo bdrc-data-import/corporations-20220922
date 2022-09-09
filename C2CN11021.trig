@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11021 {
+    bda:C2CN11021  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11021 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "82/C2CN11021.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11021 ;
+        adm:logEntry        bda:LGEDDAFB71AA11CAA7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGEDDAFB71AA11CAA7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-25T16:54:58.449Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 6 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11021  a        :Corporation ;
+        skos:altLabel       "mdo smad dbal shul gyi rigs/"@bo-x-ewts ;
+        skos:prefLabel      "mdo smad dbal shul rigs/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM2014E9E89E3AF710 , bdr:CM429ECCA03B800C02 , bdr:CM9AB507A38FC0CEBC , bdr:CMA511A1C11B85CD69 , bdr:CMC9988144B5B1661F , bdr:CMDB158AAD5CD1E467 ;
+        :note               bdr:NT2FF31B95A6727907 , bdr:NTD2D610FCFFB6A8A5 .
+    
+    bdr:CM2014E9E89E3AF710
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1270 .
+    
+    bdr:CM429ECCA03B800C02
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1770 .
+    
+    bdr:CM9AB507A38FC0CEBC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1630 .
+    
+    bdr:CMA511A1C11B85CD69
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6850 .
+    
+    bdr:CMC9988144B5B1661F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1269 .
+    
+    bdr:CMDB158AAD5CD1E467
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1768 .
+    
+    bdr:NT2FF31B95A6727907
+        a                   :Note ;
+        :noteText           "need to add region as mdo smad: G1202"@en .
+    
+    bdr:NTD2D610FCFFB6A8A5
+        a                   :Note ;
+        :noteText           "see also G1282"@en .
+}

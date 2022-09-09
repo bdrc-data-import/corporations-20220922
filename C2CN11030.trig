@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11030 {
+    bda:C2CN11030  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11030 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "22/C2CN11030.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11030 ;
+        adm:logEntry        bda:LGBBEE57BEC59F5A8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBBEE57BEC59F5A8F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-28T16:12:25.007Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11030  a        :Corporation ;
+        skos:altLabel       "mdo smad sman lung tshar tsha'i rigs rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "sman lung tshar tsha'i rigs rgyud/"@bo-x-ewts , "mdo smad Sman lung into the Tshar tsha lineage"@en ;
+        :corporationHasMember  bdr:CMAF4B11A4AF286FA8 ;
+        :note               bdr:NTB917B44C9F25F6F4 , bdr:NTD0653DDB7456834E .
+    
+    bdr:CMAF4B11A4AF286FA8
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1995 .
+    
+    bdr:NTB917B44C9F25F6F4
+        a                   :Note ;
+        :noteText           "need to add region as mdo smad: G1202"@en .
+    
+    bdr:NTD0653DDB7456834E
+        a                   :Note ;
+        :noteText           "see also: G1037"@en .
+}

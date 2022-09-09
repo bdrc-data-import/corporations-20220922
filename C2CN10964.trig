@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10964 {
+    bda:C2CN10964  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10964 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "38/C2CN10964.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10964 ;
+        adm:logEntry        bda:LG6AE9B33100A458D5 , bda:LGF8857B01CCADC44E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6AE9B33100A458D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-11T16:00:30.832Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added 1p# & 1G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8857B01CCADC44E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T16:11:41.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10964  a        :Corporation ;
+        skos:altLabel       "bsam grub bde chen pho brang gi sde pa Na lung pa/"@bo-x-ewts ;
+        skos:prefLabel      "sde pa Na lung pa/"@bo-x-ewts , "sde pa Na lung pa at Bsam grub bde chen Pho brang"@en ;
+        :corporationHasMember  bdr:CM9546BC0C4C08F50C ;
+        :note               bdr:NT022DF71CFD0B043D , bdr:NT68961601C5955AB9 .
+    
+    bdr:CM9546BC0C4C08F50C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2676 .
+    
+    bdr:NT022DF71CFD0B043D
+        a                   :Note ;
+        :noteText           "see also G1152"@en .
+    
+    bdr:NT68961601C5955AB9
+        a                   :Note ;
+        :noteText           "need add region as 'brug yul: G3205"@en .
+}

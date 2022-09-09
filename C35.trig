@@ -1,0 +1,200 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C35 {
+    bda:C35  a              adm:AdminData ;
+        adm:adminAbout      bdr:C35 ;
+        adm:facetIndex      43 ;
+        adm:gitPath         "72/C35.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C35 ;
+        adm:logEntry        bda:LG00A2F9D671BE34B2 , bda:LGCEB02B42241E2843 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00A2F9D671BE34B2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCEB02B42241E2843
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:00.349Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C35  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:prefLabel      "tsha rong (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM10337B5DCE44ABDC , bdr:CM1730BEA38BD3F19A , bdr:CM1A78E852471F58C0 , bdr:CM2D2BC06DD5EA7B52 , bdr:CM2ED6D1F688B7C478 , bdr:CM344627A5F0A3499E , bdr:CM35B5B2C259F07BF3 , bdr:CM45146B48BA037166 , bdr:CM530F468960394004 , bdr:CM5675DF382FCBD59D , bdr:CM5ECBB478861FC1DD , bdr:CM647914992475DD17 , bdr:CM64D3059FA52136D3 , bdr:CM7016C259EDBCB43F , bdr:CM7F01F7559BEB5E9B , bdr:CM80C3CA8131D9621B , bdr:CM814F11F711002717 , bdr:CM88E91729A13F30E4 , bdr:CM8CC7D5C3D871AD7A , bdr:CM92EBEDA46414F575 , bdr:CM9327D4BC417FF499 , bdr:CMA27110DB04C4906D , bdr:CMACCA04DFC56124A9 , bdr:CMADC31ACA4CFE900D , bdr:CMB3279E763CD22E25 , bdr:CMB47BB6ADDCBE7A62 , bdr:CMBF24596F846CBC52 , bdr:CMBF74F36448771D46 , bdr:CMC06D344061A4ACCD , bdr:CMC363CBEBC6A3DC8A , bdr:CMD2A4D8DC5302EF7F , bdr:CMDD7FC2B2423B8DEC , bdr:CMDE1DB3B6F695A40B , bdr:CME1B2D3250F045BC3 , bdr:CMEE0CDC664BB7A220 , bdr:CMF2AC0AEB785D30B7 , bdr:CMF4783B377839EEF6 , bdr:CMF7B11000A0E5BA16 , bdr:CMFF4BE16164C25122 ;
+        :corporationRegion  bdr:G210 ;
+        :note               bdr:NT03414E481DA6058F .
+    
+    bdr:CM10337B5DCE44ABDC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS312 .
+    
+    bdr:CM1730BEA38BD3F19A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS293 .
+    
+    bdr:CM1A78E852471F58C0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS298 .
+    
+    bdr:CM2D2BC06DD5EA7B52
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS294 .
+    
+    bdr:CM2ED6D1F688B7C478
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS299 .
+    
+    bdr:CM344627A5F0A3499E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS287 .
+    
+    bdr:CM35B5B2C259F07BF3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS315 .
+    
+    bdr:CM45146B48BA037166
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS305 .
+    
+    bdr:CM530F468960394004
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS286 .
+    
+    bdr:CM5675DF382FCBD59D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS311 .
+    
+    bdr:CM5ECBB478861FC1DD
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS295 .
+    
+    bdr:CM647914992475DD17
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4582 .
+    
+    bdr:CM64D3059FA52136D3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS314 .
+    
+    bdr:CM7016C259EDBCB43F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS307 .
+    
+    bdr:CM7F01F7559BEB5E9B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS309 .
+    
+    bdr:CM80C3CA8131D9621B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS292 .
+    
+    bdr:CM814F11F711002717
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS318 .
+    
+    bdr:CM88E91729A13F30E4
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS291 .
+    
+    bdr:CM8CC7D5C3D871AD7A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS310 .
+    
+    bdr:CM92EBEDA46414F575
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS306 .
+    
+    bdr:CM9327D4BC417FF499
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS317 .
+    
+    bdr:CMA27110DB04C4906D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS308 .
+    
+    bdr:CMACCA04DFC56124A9
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS289 .
+    
+    bdr:CMADC31ACA4CFE900D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS303 .
+    
+    bdr:CMB3279E763CD22E25
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS296 .
+    
+    bdr:CMB47BB6ADDCBE7A62
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1LS5645 .
+    
+    bdr:CMBF24596F846CBC52
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS284 .
+    
+    bdr:CMBF74F36448771D46
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS304 .
+    
+    bdr:CMC06D344061A4ACCD
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS297 .
+    
+    bdr:CMC363CBEBC6A3DC8A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS316 .
+    
+    bdr:CMD2A4D8DC5302EF7F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS300 .
+    
+    bdr:CMDD7FC2B2423B8DEC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS301 .
+    
+    bdr:CMDE1DB3B6F695A40B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS302 .
+    
+    bdr:CME1B2D3250F045BC3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS285 .
+    
+    bdr:CMEE0CDC664BB7A220
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS290 .
+    
+    bdr:CMF2AC0AEB785D30B7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS313 .
+    
+    bdr:CMF4783B377839EEF6
+        a                   :CorporationMemberByMarriage ;
+        :corporationMember  bdr:P5410 .
+    
+    bdr:CMF7B11000A0E5BA16
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS288 .
+    
+    bdr:CMFF4BE16164C25122
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6698 .
+    
+    bdr:NT03414E481DA6058F
+        a                   :Note ;
+        :noteText           "The family estates of Tsarong is near Sakya. They claimed to be descended from the famous physician Yuthok yonten gonpo, whi is said to have lived in the 8th century, but ceased to call themselves Yuthokpa after the name was taken by the family of the 10th Dalai Lama in 1827. The connection of the family with medicine lasted far in the 19th century.\n\tOne Tsarong Tseten Dorje waited upon the Panchen in 1692 and 1695.\n\tThey led an obscure life during most of the 18th century, the one exception being Kelsang chodak, a monk official. He first appears in 1783 together with several medical men, during the praparation of magic-medical pills. In 1796 and 1798 we find him as tsipon. Later he became cikhyab khenpo.\n\tAnother Tsarong, also a monk official, was in 1801 a tsedron and was sent to meet on the road the Panchen comming to Lhasa; he was also appointed with other offcials to see him off. We find him again as head of the Cagpori medical college (bla man), preparing medicine for the 8th Dalai Lama during his last illness. \n\tIn 1808 a fogpong Tsarong accompanied the ambans to Tsang. In 1809 he was appointed zongpon of Nangkartse and in 1810 he was in charge of some repair work in the Potala place.\n\tHis son Tsarong showed his proficiency in medicine and in the following year was appointed kadron; he is still mentioned as such in 1815.\n\tA Shodrung Tsaron son was appointed kadron in 1845 and appears as Sherpon Tsarong se in 1848. He is possibly identical with Kelsang dadul, governor of Tsaparang and holder of the 6th rank button, who took part in the Mngari campaign and in 1842 was granted the 5th rank button and the peacock feather. We find him again in the 1st month of 1856, when Tsarong tsipon Kelsang Dadul, after having participated in the campaign against the Gorkhali in the staff of kalon gung Shadra, went by his order to ngulchu and gave to Yangchen drupai Dorje the means for compiling and printing the biography of the latter's uncle Dharmabhadra.\n\tDopon Tsarong mentioned in 1852 is apparently a different person.\n\tIn 1886 tsipon Tsarngpa was sent, along with khanchen drukgyal, to demarcate the border with Sikkim; it was a measure of precaution against the Macaulay mission, which the Sino-British agreement of 1886 allowed to be sent to Lhasa, but which in the end was abandoned. On 1. III, 1888, tsipon Tsarongpa was again sent to Phagri, this time as an aid to the commander of the frontier forces, kalon Lhalungpa. We may identify him with tsipon Dorje Rigzin, who according to the Chinese documents was in direct command of the Tibetan forces at and near Lantur in March-May 1888. In the 3rd month of 1891 he was back in Lhasa from a mission to Kongpo. He died nt much later, immediately after being appointed kalon but before actually taking offcie.\n\tHis son Tsarong Wangchuk Gyalpo (1866-1912) was u dapon when he was sent to the Chumbi border in the 4th month of 1923; but he failed to persuade the British not to advance beyound Geogong. On the 22nd July he had an inconclusive meeting with Younghusband at Gampa zong, after which he stayed on in that forlorn place till the autum; but no further talks took place; then he returned to Lhasa. At the end of 1903 or early in 1904 he was appointed kalon; he was one of the Tibetan representatives who negotiated the Lhasa treaty. In 1907, he went to Darjeeling (july) and then to Simla (August) as an attached to the Chiness representative Chang Yin tang. In December he was in Calcutta and soon after signed on behalf of the Tibetan government the trade agreement of 1908. When the chinese occupied Lhasa in 1910, he remained in office and soon became their subervient tool. For this he and his elder son kadron Samdup Tseten (1887-1912) were killed by order of the Tibetan leaders at the begining of the 4th month of 1912. His second son Kelsang Lhawang (1903-1936) survived; but he ws a nyerdo well and did not enter official career. \n\tThe Kalon's duaghter Padma Dolkar and duaghter in-law Rigzin Chodon and the family estates were given to the hero of the day, Dazang Dadul (1886-1959). He was issued from a very humble family, and was as at first a body guard of the monk official in charge of the Norbulinka palace and park. Then he obtained office under the court physician Phala Jampa Chogyen and later became one of the valets of the Dalai Lama, whom he followed to Mongolia and then to China. He earned the deep-felt gratitude of his new master, when late in 1910 his pluck saved the Dalai Lama from being overtaken by the Chinese cavalry upon his flight to India. After that, he remained in close attendence to the Dalai Lama, whom he followed in his tour of the holy places of Buddhism in India. In the middle of 1911 he was sent to Tibet to engineer a revolt against the Chinese occupation forces; for this purpose the Dalai Lama issued a proclamation to his people. At the end of the year he could already send to his master a report of his activity. His seemingly hopeless task was rendered easy by the Chinese revolution and the collapse of the monarchy and of the old order. The Tibetan national rising under his lead was successful. In the autumn of 1912 he was able to welcome the Dalai Lama back to Tibet at Samding; at that time he hold the title of cikhyab khenpo of the forces of U ad Tsang. In the 3rd month of 1913 he was appointed commander-in-chief of the army with the title of Jasak. His half-forced marriage with the women of the Tsarong family ennobled him and assured his standing in the narrow circle of the ruling class; and his talent for finance and for international trade made him the richest man in Tibet. In 1914 he was appointed Kalon and dedicated most of his activity to the organisation of the new Tibetan army. For some years he was the most infuential man in the country. But then the Dalai Lama grew somewhat suspicious of his power and wealth, and in 1925 abruptly dismissed him from the command of the army. In 1929 he lost his seat in the Kashag as well. Neverthless, his wealth and his practical wisdom ensured a large share of influence in Tibetan politics far into the forties of the present centuries. After the Lhasa outbreak of 1959 he was thrown into jail, where he died on 14th Many of that year. (Petech L., Aristocracy and Government in Tibet, p. 134-138, Roma 1973. Also see Daughter of Tibet by Rinchen Dolma Taring, John Murray 1970)\n\t\n\t\nTsarong is a private estate owner located at sakya shantsa area of zhikatse in Tsang. The original family name was known as Tsarong jang phuntsok rabten. Wangchuk gyalpo became Kalon during the 13th dalai lama and his son became Kadon (cabinet secretary). Another son kelsang lhawang was recognised as incarnate lama of Drepung gomang monastery. Five duaghter were born. \n\tTsarong Wangchuk gyalpo took main responsibility of Kashag in 1910 when 13th dalai Lama and his cabinet member were living in exile in india. Both Tsarong wanghchuk gyalpo and his son Kadon were killed by tibetan protestor. (bod kyi rig gnas lo rgyus dpyad gzhi'i rgyu cha bdams bsgrigs : 5, pp. 249-293)\n\tTsarong dazang dadul originally does not belong to the Tsarong family. He belong to dazotsang family of phanpo area. He became the private attendent of 13th dalai lama and his name was Namgang. Later on he was known as Tsarong dazang dadul when he became the bridegroom of tsarong family. He hold offical post such as chief of military, minister and zazak. He was one of the most powerful minister during the 13th dalai lama. (bod kyi rig gnas lo rgyus dpyad gzhi'i rgyu cha bdams bsgrigs : 5, pp. 249-293)\n\tPersonal name Namgang Dazang Damdul. Born in 1885. Of humble origin, he at first occupied a menial position in the household of the 13th Dalai Lama. Was one of the few devoted who accompanied the Dalai Lama in his flight to Mongolia in 1903 and rapidly became his most trusted servant. At Chaksam ferry in March 1910, he with a party of Tibetan soldiers, kept back a force of Chinese troops who were attempting to prevent the flight of the Dalai Lama to India. Afterwards followed the Dalai Lama to India and resided with him in Darjeeling. In the autum of 1911 he was sent by the Dalai Lama to Shigatse and it was largely owing to him that the Chinese garrison there were compelled to surrnder their arms. Was appointed Commander-in-chief early in 1912 and given the title of Zasak in the same year. In july 1913 he married the eldest daughter of the late Tsarong Shap pe. With the persmission of the Dalai Lama the widow of Tsarong Shap pe caused him to be recognised as heir to the family estates. Appointed Shap pe in 1914 in place of the late Sechung Shap pe. Visited Gyangtse in September 1915 and met the Political Officer in Sikkim. Visited India on pilgrimage in 1924. Was deprived of the post of Commander-in-chief in 1925 on his retrun from India, and in 1929 was degraded from Shap pe to the rank of Zasak. Was again offered the post of Shap pe but refused to the rank of Zasak. He was one of the supporter of the management of the Drapchi factory. He was very influential and had the support of Drepung monastery. He had a little spoken knowledge of Russian, Mongolian and Hindustani. He completed the construction of a steel bridge over the Tolung Chu at Trisum, 8 miles from Lhasa, in 1937. Clever, wealthy. mechanically and progressively minded but fearful of expressing publicly his opinions. ( Richardson H., Who's Who in Tibet :1945, pp. 46 )\n\tTsarong Se, his personal name is Dudul Namgyal  also known as George. Born in 1919. Only son of Tsarong Zazak. Was at St. Joseph's college, Darjeeling, from 1935 to 1940. Was made a cabinet secretary in March 1941. Has been under instructions in wireless telegraphy at the British Mission since 13th February 1944. ( Richardson H., Who's Who in Tibet :1945, pp. 46 )"@en .
+}

@@ -1,0 +1,33 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C28 {
+    bda:C28  a              adm:AdminData ;
+        adm:adminAbout      bdr:C28 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a6/C28.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C28 ;
+        adm:logEntry        bda:LGCB95F963C15ACCE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCB95F963C15ACCE3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C28  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:altLabel       "lcags grong spyi khang pa (sku drag)"@bo-x-ewts , "spyi khang lcags grong (sku drag)"@bo-x-ewts ;
+        skos:prefLabel      "spyi lcags (sku drag)"@bo-x-ewts .
+}

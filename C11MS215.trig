@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS215 {
+    bda:C11MS215  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS215 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "60/C11MS215.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS215 ;
+        adm:logEntry        bda:LG68FC14B12FBDC265 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG68FC14B12FBDC265
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:49:49.497Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS215  a         :Corporation ;
+        skos:altLabel       "Tse-u Jamshul"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "rtse dbus byams shul/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM96373EB390CCF69D ;
+        :note               bdr:NT68143982268B632F .
+    
+    bdr:CM96373EB390CCF69D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1849 .
+    
+    bdr:NT68143982268B632F
+        a                   :Note ;
+        :noteText           "A division of the ancient Dong clan, Tse-u Jamshul is an clan that was highly regarded by Bonpos in ancient times. The Fiftieth Ganden Tripa, Gendun Puntsok was a member of the Tse-u Jamshul clan."@en .
+}

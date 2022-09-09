@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS203 {
+    bda:C11MS203  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS203 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "45/C11MS203.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS203 ;
+        adm:logEntry        bda:LG79CEEE890C84870B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG79CEEE890C84870B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:16:26.96Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS203  a         :Corporation ;
+        skos:altLabel       "Odren"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "o bran/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM82A6A98D8CAA2E61 ;
+        :note               bdr:NTADC2B30B8E48E058 .
+    
+    bdr:CM82A6A98D8CAA2E61
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3AG55 .
+    
+    bdr:NTADC2B30B8E48E058
+        a                   :Note ;
+        :noteText           "The Odren clan still preserves and practices the oral teachings of the spoken word (bka' ma) lineage of Nyingma teachings. Odren Pelgyi Wangchuk, one of the twenty-five disciples of Padmasambhava, was born into this clan in the 8th century."@en .
+}

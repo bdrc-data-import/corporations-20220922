@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS213 {
+    bda:C11MS213  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS213 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "57/C11MS213.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS213 ;
+        adm:logEntry        bda:LG47737D5ABE9444BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG47737D5ABE9444BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:47:21.961Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS213  a         :Corporation ;
+        skos:altLabel       "Ngupa"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "rngu pa/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM847B2963DD722EB4 ;
+        :note               bdr:NT67F2630ABF2AE571 .
+    
+    bdr:CM847B2963DD722EB4
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1492 .
+    
+    bdr:NT67F2630ABF2AE571
+        a                   :Note ;
+        :noteText           "The Ngupa clan is presumably of Kham, where member Jampa Bum was born in the twelfth century."@en .
+}

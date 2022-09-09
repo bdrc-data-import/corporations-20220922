@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11002 {
+    bda:C2CN11002  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11002 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cd/C2CN11002.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11002 ;
+        adm:logEntry        bda:LG025D278A812B19C8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG025D278A812B19C8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-23T14:43:47.81Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 4 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11002  a        :Corporation ;
+        skos:altLabel       "sde dge lha thog khul a gro tshang /"@bo-x-ewts ;
+        skos:prefLabel      "lha thog a gro tshang /"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0963FE686197CB9A , bdr:CMCF8807967E2A0FD2 , bdr:CMDAAE87C03F3BE2DA , bdr:CMEE64C08BCA88B228 ;
+        :note               bdr:NT4A90B4A1246544BF , bdr:NTD623A729C386CF68 .
+    
+    bdr:CM0963FE686197CB9A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5250 .
+    
+    bdr:CMCF8807967E2A0FD2
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5251 .
+    
+    bdr:CMDAAE87C03F3BE2DA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5252 .
+    
+    bdr:CMEE64C08BCA88B228
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P235 .
+    
+    bdr:NT4A90B4A1246544BF
+        a                   :Note ;
+        :noteText           "need to add region as sde dge: G1366"@en .
+    
+    bdr:NTD623A729C386CF68
+        a                   :Note ;
+        :noteText           "see also: G682"@en .
+}

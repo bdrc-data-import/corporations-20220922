@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C14 {
+    bda:C14  a              adm:AdminData ;
+        adm:adminAbout      bdr:C14 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "54/C14.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C14 ;
+        adm:logEntry        bda:LG21849796A17559E2 , bda:LG305ADDF6CACA2E93 , bda:LG31642056761C3628 , bda:LG56C524B0108E8E00 , bda:LG825A1550B51F8A52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21849796A17559E2
+        a                   adm:UpdateData ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG305ADDF6CACA2E93
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:55.859Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG31642056761C3628
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T20:23:01.866Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G1981 to G2170"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG56C524B0108E8E00
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-19T16:36:47.222Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG825A1550B51F8A52
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C14  a              :Corporation ;
+        skos:altLabel       "bkra shis mthong smon (sku drag)"@bo-x-ewts ;
+        skos:prefLabel      "bkras mthong (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM2D881A1DB2090551 , bdr:CM56953B0F7A9DB785 , bdr:CM7654E1949D12D6A9 , bdr:CM8692C3BDF6045B4C , bdr:CM8E738E062215D06D , bdr:CMB1086BCF46AA1F92 , bdr:CMCF7517F7DB95A599 , bdr:CMD6D2ACEA5D1CF983 ;
+        :corporationRegion  bdr:G2170 ;
+        :note               bdr:NTE24771116D5BEFDB .
+    
+    bdr:CM2D881A1DB2090551
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6079 .
+    
+    bdr:CM56953B0F7A9DB785
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS253 .
+    
+    bdr:CM7654E1949D12D6A9
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS252 .
+    
+    bdr:CM8692C3BDF6045B4C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS249 .
+    
+    bdr:CM8E738E062215D06D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS250 .
+    
+    bdr:CMB1086BCF46AA1F92
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5116 .
+    
+    bdr:CMCF7517F7DB95A599
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS248 .
+    
+    bdr:CMD6D2ACEA5D1CF983
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS254 .
+    
+    bdr:NTE24771116D5BEFDB
+        a                   :Note ;
+        :noteText           "The full name of the family is Tashi Thonmon. Their home is near Shigatse. The family is listed in 1723 in the Tsang nobility, but otherwise only scattered mentions are met with the cource of the 18th century; they held only minor posts. Thus one Tashi Tashi Thonmonpa apperas at benefactor (jindak) of the Panchen in 1726, 1729 and 1732. The same or another is mentioned in 1737. In 1742 he was Zhidod of Shopado. A Tashi thonmonwa of Shigtse was appointed Kadrung in 1751 and is mentioned again in 1754 and 1765. Another Tashi Thonmonpa was Zongpon of Namgling in 1774 and is probably the same as the chibpon Tethongpa, who in 1778 acted as Neshan of the Panchen on his journey from Lhasa back to Tsang and in 1779 met him again at Yangpacan. A different man was the ecclesiastic official Tethong Jedrung Losang \nJinpa, Nyerpa of Richentse, who in 1779 contributed to the travel expenses of the Panchen to Peking. A member of the family was also mentioned in 1810 and 1815.\nIn 1847 Dapon Tethongwa was sent to Dingri, and in 1849-1853 was connected with the restoration work at Samye. In 1857 he was sent again to Dingri and is mentioned also in 1859 and 1861.\nA Tashi Thonmonpa paid homage to the Dalai Lama at Yarlung in 1874; he may be the same as the Dapon Tethong who appears in 1879 and was dismissed from a command at Gartok in 1881. \nA Shodrung Tethongpa in 1907 visited the Dalai Lama, then somewhere in Kansu.\nThe foremost member of this family was Tethong Gyurmed Gyatso (1890-1938). He appeared government service in 1913 and was appointed at once Tsang Dapon and posted in Kham. He was in charge de-facto of the government of Derge and was one of the officer who signed the truce agreement of 10th October, 1918. In 1923 he was in Lhasa; then he went back to Kham as Derge chikhyab, being finally recalled in 1928. In 1932 he was appointed joint (las phar) Kalong and went again to Kham to hold an important command there. Later in the same year he was promoted to full Kalon and Dochi in succession to Nagpodpa. \nIn 1935 he left Kham and came back to Lhasa, where he remained till his death in 1938. \nA brother of the Kalon, by name Losang Namgyal (b.c. 1909), because a monk official in 1933 and was Shingnyer untill about 1950, when he was appointed Nyertsang. He held this office till about 1950, when he was appointed Khanchung. No information after 1959.\nAnother brother, Palden Gyaltsen (c. 1908-c.1967), established a side-branch, Tethong zurpa. He attended Frank Ludlow's school at Gyantse (1919-1923), then was put in charge of the government estates in Jayul. Then he was assistant in the Drazhi hydro-electric station, became Zongpon sharpa of Gyantse in 1935, Drachen Zongpon in 1942, assistant master in the telegraph office(tarkhang) at Lhasa in 1943, then director of the same office. He died c. 1967.\nThe son of the Kalon, called Sonam Topjor (b.1923), became Tsanyer in 1942 and Rupon of the body-guard about 1944. He died in India.\n\n(Petech L., Aristocracy and Government in Tibet, p. 89-91, Roma 1973)"@en .
+}

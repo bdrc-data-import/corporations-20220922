@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C55 {
+    bda:C55  a              adm:AdminData ;
+        adm:adminAbout      bdr:C55 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f1/C55.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C55 ;
+        adm:logEntry        bda:LGA71F85B21153E7C9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA71F85B21153E7C9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C55  a              :Corporation ;
+        rdfs:comment        "incarnation estate"@en ;
+        skos:prefLabel      "mkhar rdo bla brang (se ra)"@bo-x-ewts ;
+        :corporationRegion  bdr:G2128 ;
+        :note               bdr:NTB7FC8A9565339AB5 .
+    
+    bdr:NTB7FC8A9565339AB5
+        a                   :Note ;
+        :contentLocationStatement  "p. 31" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "this bla brang administered the rnying ma pa monastery of ri sna dgon, located in lcang can grong tsho, tsha rag shang, chu shur rdzong, lha sa prefecture"@en .
+}

@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS197 {
+    bda:C11MS197  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS197 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "df/C11MS197.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS197 ;
+        adm:logEntry        bda:LGF01411869E62D7CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF01411869E62D7CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:07:15.586Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS197  a         :Corporation ;
+        skos:altLabel       "Chakhung"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "lcag khung /"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM304929EC6D2DA4C3 ;
+        :note               bdr:NT5F3367FDF5D6E0E7 .
+    
+    bdr:CM304929EC6D2DA4C3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P7774 .
+    
+    bdr:NT5F3367FDF5D6E0E7
+        a                   :Note ;
+        :noteText           "The Chakhung is a clan from Golok. Khenpo Jigme Puntsok was born to the Chakhung clan in Dokhok, Golok region in 1933."@en .
+}

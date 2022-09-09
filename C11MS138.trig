@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS138 {
+    bda:C11MS138  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS138 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0a/C11MS138.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS138 ;
+        adm:logEntry        bda:LG383F47FF01288022 , bda:LG4C812A4AE8862135 , bda:LG91A538A95517C040 , bda:LGD2FFC05799E36CD8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG383F47FF01288022
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-24T10:35:41.927Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4C812A4AE8862135
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-24T10:50:16.756Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG91A538A95517C040
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-24T10:31:22.073Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD2FFC05799E36CD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:54:38.936Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS138  a         :Corporation ;
+        skos:altLabel       "rmu gdung rgyud/"@bo-x-ewts , "rmu rigs/"@bo-x-ewts ;
+        skos:prefLabel      "rmu ru/"@bo-x-ewts , "Mu Clan"@en ;
+        :note               bdr:NT0BA9AF83B21E90D3 , bdr:NTD395337042D2D26A .
+    
+    bdr:NT0BA9AF83B21E90D3
+        a                   :Note ;
+        :contentLocationStatement  "p. 154" ;
+        :noteSource         bdr:MW7499 ;
+        :noteText           "one of the early four divisions of family clans in tibet"@en .
+    
+    bdr:NTD395337042D2D26A
+        a                   :Note ;
+        :noteText           "One of the four original Tibetan ancestral clans. The Mu ancestral clan claims Muje Kolpo (rmu rje kol po) as a common ancestor. According to bshad mdzod chen mo, Mu has eight sub-clans: ngam, snubs, gzhung, 'gar or mgar, dkar, smon, snyos or gnyos, ngan lam. According to The Treasure of the Ancestral Clans of Tibet, based on the Golok Rudzod, the Mu clan is also known by different names, such as dmu tsha sga, thang le sga, rmu, dmu and sga. They were said to hold the three vast plains of Kham Yarmotang, the Jang Karmotang and Tsongkha Lakyitang of Amdo. The Ga includes nine separate sub-clans: including Adro/ sga a gro, Arik/ sga arik, Adruk/ sga a ‘brug, Atrom/a khrom and Ashing/ sga shing, established by the nine separate children of dmu tsha sga. Bodkyi Gdungrus Zhib'jug notes that Nyatri Tsenpo's queen Mutsoza was from the Mu clan."@en .
+}

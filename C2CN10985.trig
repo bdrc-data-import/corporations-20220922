@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10985 {
+    bda:C2CN10985  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10985 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "aa/C2CN10985.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10985 ;
+        adm:logEntry        bda:LG2B71BB03479E7411 , bda:LGD1BA8EB5D5F5708F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B71BB03479E7411
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-29T10:45:04.602Z"^^xsd:dateTime ;
+        adm:logMessage      "addded name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD1BA8EB5D5F5708F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-16T16:17:52.126Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10985  a        :Corporation ;
+        skos:altLabel       "khro phu'i gnubs rigs/"@bo-x-ewts ;
+        skos:prefLabel      "gnubs khro phu pa'i gdung rgyud/"@bo-x-ewts , "lineage Gnubs Khro phu ba"@en ;
+        :corporationHasMember  bdr:CM1778C197BC2E7B00 , bdr:CM2140286EA662B2E2 , bdr:CM8C313CF096912B76 ;
+        :note               bdr:NT65A20818FC7D5966 .
+    
+    bdr:CM1778C197BC2E7B00
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5078 .
+    
+    bdr:CM2140286EA662B2E2
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5079 .
+    
+    bdr:CM8C313CF096912B76
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1689 .
+    
+    bdr:NT65A20818FC7D5966
+        a                   :Note ;
+        :noteText           "need to add region as gtsang: G1300"@en .
+}

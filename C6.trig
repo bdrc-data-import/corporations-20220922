@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C6 {
+    bda:C6  a               adm:AdminData ;
+        adm:adminAbout      bdr:C6 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "7e/C6.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C6 ;
+        adm:logEntry        bda:LG92B17FB3ED64C0C3 , bda:LG9CA03E35F9910E7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG92B17FB3ED64C0C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9CA03E35F9910E7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:05.25Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C6  a               :Corporation ;
+        rdfs:comment        "yab gzhis family"@en ;
+        skos:altLabel       "lha klu dga' tshal 1 (yab gzhis)"@bo-x-ewts ;
+        skos:prefLabel      "lha klu 1 (yab gzhis)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0C5085FB0E816B2B , bdr:CM2DFDAA7CF7EE0449 , bdr:CM55F3E7DFE915DA81 , bdr:CM57C21E138064654B , bdr:CM99D9BA804AF852B3 , bdr:CM9CEB99C5249430EE , bdr:CMC33B78F26B44DF7A , bdr:CMC41D86D7FF1302D5 , bdr:CMD2CA745A40ABA0AE , bdr:CMF634F4A19EEE0D18 ;
+        :corporationRegion  bdr:G11101 ;
+        :note               bdr:NT14CFFFC6899F6F72 .
+    
+    bdr:CM0C5085FB0E816B2B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS172 .
+    
+    bdr:CM2DFDAA7CF7EE0449
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS173 .
+    
+    bdr:CM55F3E7DFE915DA81
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P109 .
+    
+    bdr:CM57C21E138064654B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS176 .
+    
+    bdr:CM99D9BA804AF852B3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS175 .
+    
+    bdr:CM9CEB99C5249430EE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS174 .
+    
+    bdr:CMC33B78F26B44DF7A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P323 .
+    
+    bdr:CMC41D86D7FF1302D5
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS177 .
+    
+    bdr:CMD2CA745A40ABA0AE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P285 .
+    
+    bdr:CMF634F4A19EEE0D18
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS178 .
+    
+    bdr:NT14CFFFC6899F6F72
+        a                   :Note ;
+        :noteText           "Full name: Lhalu gatsal. It is the name of their stately mansion near Lhasa. This is the family of the 8th Dalai Lama. This house supplied a disproportionate numbe of princes of the Yellow Church; and the well-known decree of 1793, by which the emperor prescribed the drawing of lots from a golden bowl for the selection of higher incarnate Lamas, was mainly aimed at preventing in the future such a monopoly by a single family.\nThe unnamed forefather of this house had at least three sons. The eldest was Sonam Dargye; according to a Chinese text, who calls him by the name Abum (a mu pu mu), he died early. Indeed he is not mentioned in the biography at the time of the recognition of the 8th Dalai Lama, nor ever afterward. There is a tradition to the effect that he had been a servant in the household of an official described as Ronpon chenpo.\nSonam Dargye in his turn had three sons: Sonam Tashi, Losang Dorje and the future 8th Dalai Lama.\nSonam Tashi visited the Panchen in 1771.In 1781 he obtained from the emperor the title of fu-kwa-kung, but died at Urga on 9th April, 1782.\nOf his two sons, the elder became the 4th Jetsun Dampa Qutuqtu Losang Thupten Wangchuk (1775-1813). The younger, Rabten Namgyal, succeeded his fatheras kung in 1782. At first he resided with his brother in the Khalkha territory; then he came back to Tibet. In 1784 he was granted the peacock feather. He died childless in 1803, and in vain the Dalai Lama begged the emperor to appoint as successor his own maternal cousin. The title lapsed, as the emperor had laid down in 1783. \nSonam Dargye's second son Losang Dorje entered the ecclesiastic career. He appears for the first time in 1781. Two years later he went to Tashi Lhunpo to represent the Dalai Lama at the installation of the Panchen, after which he is not mentioned untill 1788. In the following years (1789-1790) he was known as the abbot of Mangra. However, he was persona non grata with the Manchu residents, and in October 1790 he and his half brother Losang Gedun Dakpa were arrested and sent to Peking. Early in 1791 he was received in audience by the emperor, who confirmed his title of khanpo. Best on 3.III.1791, the news of his death (probably at Peking) reached Lhasa; the funeral rites were performed three days later.\nThe third son of Sonam Dargye was, as already said, the 8th Dalai Lama.\nA youngest brother of Sonam Dargye, called Losang Phuntsok, was certainly the most active and influential member of the family. His relations with the 3rd Panchen were particularly close; he visited him in 1765, 1769, 1777 and 1778, and in 1781 he sent as envoy to Ts'a c'u ka'a in the Dangla region to receive with due honour the corpse of the pontiff, who had died in Peking. In the same year he was honoured by the grant of an imperial seal. He too was present at the enthronment of the Panchen in 1783-1784, and in 1786 he went again to Tashi Lhungpo to bring some presents to the young incarnate. In 1785 he had discussed with the regent the arrangement for the impending assumption of full powers by the Dalia Lama. Probably he played an influential role during the two years (1786-1788) in which the Dalai Lama tried (and failed) to govern personally; but no trace of such a role is found in the texts. In 1788 he was among the officials who received the Panchen. Fleeing from Tashi Lhunpo to Lhasa before the Gorkha invaders. In 1789 he was sent to Tashi Lhunpo to take part in the funerals of the Panchen's father and in the next year he visited again that monastery; he died later in that same year 1790.\nHe had a son of his own, by name Losang Gedun Dakpa. This half brother of the Dalai Lama was present at the funerals of the 3rd Panchen in 1781. On 10th August, 1789, the imperial commissioner Bajung memorialised the throne proposing him for an appointment as Khanpo; without waiting for a reply, the Dalai Lama invested him as abbot of Nyal Dedruk (8th month).\nSoon after he and Losang Dorje fell into disgrace with the imperial representatives, and already at the end of 1789 the emperor was seriously thinking of summoning them to Peking. Things came to a head in the following year, when the amban charged them both with unlawful extortion of money, unruly bahaviour and strong Nyingmapa leanings; as a consequences, the emperor passed strict orders to send them to Peking (28th September, 1790); they left Tibet on the 28th October. Their exile, however, was not very hard, and on 21.II.1791, the news reached Lhasa that the emperor had granted to the brothers and audience, during which he had confirmed at last their titles of Khanpo. Losang Dorje died in China; but on 17th October 1791, following the entreaties of the Dalai Lama, the emperor allowed Losang Gedun Dakpa to return to Tibet, where he arrived in December. In the first month of 1792 he was appointed, along with Kalon Gazhi and Yuthok, to negotiate with the Zhamar Tulku and the Nepalese commissioners. But before his mission could materialise, he died in February 1792.\nAnother member of the family was Palden Dondup, of whom we are told that he was a nephew (kutsa) of the Dalai Lama's uncle Losang Phuntsok; the latter seng him to visit the Panchen in 1767 and both together went on the same journey in 1769. Palden Dondup went again to Tsang in 1778 and finally settled there, as it appears from other mentions in 1779 and 1781.\nAfter the recognition of his son as the 4th Panchen Losang Tenpai Nyima (1781-1853) he received in 1787 the title of fu-kwa kung, as well as the coral button and the peacock feather. He died in 1789.\nIt is difficult to tell how the family was continued. There was a Lhalu se, who in the 5th month of 1808 returned from Tsang and in the same year received a rank button from the emperor; we do not know in which way he was related to the family of the 8th Dalai Lama. In 1813 he accompanied the Panchen upon the latter's return to Tsang. He is mentioned, always without a personal name, in 1814, 1822, 1825, 1827, 1829, 1832. Then there is utter silence.\n\n(Petech L., Aristocracy and Government in Tibet, p. 39-43, Roma 1973. Also see Yab gzhis lha klu'i khyim tshang gi lo rgyus skor in Bod kyi lo rgyus rig gnas dpyad gzhi'i rgyu cha bdams bsgrigs : 16)"@en .
+}

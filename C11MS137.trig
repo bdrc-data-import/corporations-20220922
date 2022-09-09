@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS137 {
+    bda:C11MS137  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS137 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "54/C11MS137.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS137 ;
+        adm:logEntry        bda:LG62933C765CC855F5 , bda:LG7C7367295CDB0774 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG62933C765CC855F5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-23T14:08:20.719Z"^^xsd:dateTime ;
+        adm:logMessage      "CREATED"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7C7367295CDB0774
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:55:29.397Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS137  a         :Corporation ;
+        skos:altLabel       "Begu"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "be gu/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM8E06B30991C94780 ;
+        :note               bdr:NT3776415CAFC402C9 , bdr:NT4708271E3595BF2A , bdr:NTD41751404A134B2F .
+    
+    bdr:CM8E06B30991C94780
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P00AG02484 .
+    
+    bdr:NT3776415CAFC402C9
+        a                   :Note ;
+        :noteText           "The Begu family lived on the Gyer estate in the Yarlung valley, where they were hereditary chiefs in the area, along with the Negu clan. The Begu family is of the Khangsar, or 'new house', family. In this lineage, the elder brother would become a monk and the head of the Trandruk temple 'nephews,' while the younger brother would become a householder and inherit the non-religious post of his father, a general."@en .
+    
+    bdr:NT4708271E3595BF2A
+        a                   :Note ;
+        :noteText           "Branch of Gyer clan, Khangsar family is a member of this subsect of Gyer. Gyergom Tsultrim's (12th-13th c) father's side were hereditary chiefs of area around Trandrug (khra 'brug) Temple in Yarlung Valley."@en .
+    
+    bdr:NTD41751404A134B2F
+        a                   :Note ;
+        :noteText           "in Yarlung Valley"@en .
+}

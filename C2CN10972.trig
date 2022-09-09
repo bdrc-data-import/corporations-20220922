@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10972 {
+    bda:C2CN10972  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10972 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "47/C2CN10972.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10972 ;
+        adm:logEntry        bda:LGAE2DECA85FCC79C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAE2DECA85FCC79C6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-14T16:18:16.747Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 2 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10972  a        :Corporation ;
+        skos:altLabel       "a mdo khya dge se tshang /"@bo-x-ewts , "mdo smad khya dge se tshang /"@bo-x-ewts ;
+        skos:prefLabel      "khya dge se tshang /"@bo-x-ewts , "mdo smad Khya dge Se tshang in Zur ru 'Phrin las Tshang"@en ;
+        :corporationHasMember  bdr:CM2095542FFCBE7E2D , bdr:CM55D9982B1A831545 ;
+        :note               bdr:NTE205F120A1B0DFA0 .
+    
+    bdr:CM2095542FFCBE7E2D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5191 .
+    
+    bdr:CM55D9982B1A831545
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3624 .
+    
+    bdr:NTE205F120A1B0DFA0
+        a                   :Note ;
+        :noteText           "need to add region as mdo smad: G1202"@en .
+}

@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS211 {
+    bda:C11MS211  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS211 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "52/C11MS211.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS211 ;
+        adm:logEntry        bda:LG6598F65A6A717365 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6598F65A6A717365
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:44:24.043Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS211  a         :Corporation ;
+        skos:altLabel       "Ngen"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "rngan/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMFAD885912E94C130 ;
+        :note               bdr:NT8D886CCAB1D82BA7 .
+    
+    bdr:CMFAD885912E94C130
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3785 .
+    
+    bdr:NT8D886CCAB1D82BA7
+        a                   :Note ;
+        :noteText           "The Ngen clan's most prominent member was Parpuwa Lodro Sengge, born in the 12th century in central Tibet."@en .
+}

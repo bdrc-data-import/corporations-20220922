@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS119 {
+    bda:C11MS119  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS119 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "23/C11MS119.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS119 ;
+        adm:logEntry        bda:LG2E05422B1255E430 , bda:LGE0370C3E192EF811 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2E05422B1255E430
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T17:01:17.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE0370C3E192EF811
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T09:58:59.268Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS119  a         :Corporation ;
+        skos:prefLabel      "rngog"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM75B6655B6049267A ;
+        :note               bdr:NTE617AECCBBF9FE97 .
+    
+    bdr:CM75B6655B6049267A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2551 .
+    
+    bdr:NTE617AECCBBF9FE97
+        a                   :Note ;
+        :noteText           "\"The Ngok clan originated during the time of the Pugyel dynasty's 36th King Dusong Mangpo Je. The Ngok clan, which associated with the Kadampa lineage, founded Sangpu Neutok Monastery. It was Ngok Lekpei Sherab who founded the monastery in 1072 and his nephew Ngok Lotsāwa Loden Sherab who developed it. \n\n\n\n\n\""@en .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11036 {
+    bda:C2CN11036  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11036 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "7d/C2CN11036.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11036 ;
+        adm:logEntry        bda:LG851CAAF3CF0FDF70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG851CAAF3CF0FDF70
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-29T15:45:28.931Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 5 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11036  a        :Corporation ;
+        skos:altLabel       "mdo khams chab mdo tham kha grong sno rom/"@bo-x-ewts ;
+        skos:prefLabel      "chab mdo tham kha grong sno rom tshang /"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM238CC4C432EAAEEC , bdr:CM73DA8B53329D3D86 , bdr:CM8AC214CFA93E7210 , bdr:CMCEFC9B6E821F0ECB , bdr:CMD3A452D15E2166F0 ;
+        :note               bdr:NTBA8195FCF765E1CB , bdr:NTFC9CBF48B4B94530 .
+    
+    bdr:CM238CC4C432EAAEEC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2342 .
+    
+    bdr:CM73DA8B53329D3D86
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2341 .
+    
+    bdr:CM8AC214CFA93E7210
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2344 .
+    
+    bdr:CMCEFC9B6E821F0ECB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2345 .
+    
+    bdr:CMD3A452D15E2166F0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P108 .
+    
+    bdr:NTBA8195FCF765E1CB
+        a                   :Note ;
+        :noteText           "see also G565"@en .
+    
+    bdr:NTFC9CBF48B4B94530
+        a                   :Note ;
+        :noteText           "need to add region as chab mdo: G2185"@en .
+}

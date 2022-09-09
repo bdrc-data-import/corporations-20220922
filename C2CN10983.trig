@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10983 {
+    bda:C2CN10983  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10983 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "37/C2CN10983.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10983 ;
+        adm:logEntry        bda:LGA6AFC6D5728269DE , bda:LGE623006E7E4C3292 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA6AFC6D5728269DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:50:45.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE623006E7E4C3292
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-16T14:15:28.695Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 2 p# & G# with 2 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10983  a        :Corporation ;
+        skos:altLabel       "khrom thar rgya shod dge rtse rus/"@bo-x-ewts ;
+        skos:prefLabel      "dge rtse rus/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM280E61F8896A8B0D , bdr:CMF0EC8D91C2DAB9E7 ;
+        :note               bdr:NT0E0C29A1B7CFF7CB , bdr:NT804E894E5B913868 , bdr:NTFDBE35B19B7792F6 .
+    
+    bdr:CM280E61F8896A8B0D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4782 .
+    
+    bdr:CMF0EC8D91C2DAB9E7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6052 .
+    
+    bdr:NT0E0C29A1B7CFF7CB
+        a                   :Note ;
+        :noteText           "need to add region as mgo log: G1490"@en .
+    
+    bdr:NT804E894E5B913868
+        a                   :Note ;
+        :noteText           "A sub clan originating from the Dong ancestral clan. An ancestor called Getse had three sons called Ma, Lag and Thong who each had their own descendants. Getse Pontsang, also known as Lama Zhabdrung, originated the Getse Ponpotsang line at Zachukha."@en .
+    
+    bdr:NTFDBE35B19B7792F6
+        a                   :Note ;
+        :noteText           "'di mgo log khul la yin dang dkar mdzes khul du yin da dung mu mthud rtsad rgyu/"@bo-x-ewts .
+}

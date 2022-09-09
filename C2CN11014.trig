@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11014 {
+    bda:C2CN11014  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11014 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "99/C2CN11014.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11014 ;
+        adm:logEntry        bda:LGCE570FC986749C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCE570FC986749C62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-25T09:54:42.896Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11014  a        :Corporation ;
+        skos:prefLabel      "shar wa can zhal ngo'i rigs rgyud/"@bo-x-ewts , "lineage of shar wa can zhal ngo"@en ;
+        :corporationHasMember  bdr:CM410ECAC9886C165D ;
+        :note               bdr:NT1F95C3737FF8F3CE , bdr:NTC0A591D8F371D941 .
+    
+    bdr:CM410ECAC9886C165D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P527 .
+    
+    bdr:NT1F95C3737FF8F3CE
+        a                   :Note ;
+        :noteText           "see also G737"@en .
+    
+    bdr:NTC0A591D8F371D941
+        a                   :Note ;
+        :noteText           "need to add region as 'brug yul: G3205"@en .
+}

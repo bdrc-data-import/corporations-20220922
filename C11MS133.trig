@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS133 {
+    bda:C11MS133  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS133 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "cf/C11MS133.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS133 ;
+        adm:logEntry        bda:LG0BA793318D41B903 , bda:LG2155A7EB0717779F , bda:LG527812D6A75B4A97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0BA793318D41B903
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-23T14:11:00.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added members"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2155A7EB0717779F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-21T16:27:05.266Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG527812D6A75B4A97
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:58:31.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS133  a         :Corporation ;
+        skos:prefLabel      "smug po ldong /"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0EC6D607E091B278 , bdr:CM24727CF2AFB08CDD , bdr:CM6692818E339F6D97 , bdr:CMA9DC6D2C7512C671 , bdr:CMB659775C07F8AC21 ;
+        :note               bdr:NTEA1A0DDDE407D285 .
+    
+    bdr:CM0EC6D607E091B278
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6958 .
+    
+    bdr:CM24727CF2AFB08CDD
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P293 .
+    
+    bdr:CM6692818E339F6D97
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6744 .
+    
+    bdr:CMA9DC6D2C7512C671
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P9530 .
+    
+    bdr:CMB659775C07F8AC21
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P724 .
+    
+    bdr:NTEA1A0DDDE407D285
+        a                   :Note ;
+        :noteText           "Mukpo or Mukpo Dong is one of four branches of the ancient Dong clan. The Mukpo claim decent from Gesar of Ling.  Mukpo descendents are particularly associated with the Kham region."@en .
+}

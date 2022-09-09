@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C34 {
+    bda:C34  a              adm:AdminData ;
+        adm:adminAbout      bdr:C34 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "46/C34.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C34 ;
+        adm:logEntry        bda:LGFF45DB720C973246 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGFF45DB720C973246
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C34  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:altLabel       "sman khab stod pa (sku drag)"@bo-x-ewts ;
+        skos:prefLabel      "sman stod (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM31D9CA8E0FFE43F7 , bdr:CM389E19E44B74A6DC , bdr:CMC9BC3F992FF27938 ;
+        :corporationRegion  bdr:G1980 ;
+        :note               bdr:NTA7535B8870BC8088 .
+    
+    bdr:CM31D9CA8E0FFE43F7
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6924 .
+    
+    bdr:CM389E19E44B74A6DC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6925 .
+    
+    bdr:CMC9BC3F992FF27938
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6706 .
+    
+    bdr:NTA7535B8870BC8088
+        a                   :Note ;
+        :contentLocationStatement  "p. 133" ;
+        :noteSource         bdr:MW20167 ;
+        :noteText           "family estate is in the district of shel dkar rdzong"@en .
+}

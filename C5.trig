@@ -1,0 +1,129 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C5 {
+    bda:C5  a               adm:AdminData ;
+        adm:adminAbout      bdr:C5 ;
+        adm:facetIndex      25 ;
+        adm:gitPath         "fe/C5.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C5 ;
+        adm:logEntry        bda:LG2C3A0E8AB3EE6372 , bda:LGBC878B11E7AA65E4 , bda:LGD113F7B2587F9083 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C3A0E8AB3EE6372
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:03.966Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBC878B11E7AA65E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T09:24:49.719Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD113F7B2587F9083
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C5  a               :Corporation ;
+        skos:altLabel       "bsam pho (yab gzhis)"@bo-x-ewts ;
+        skos:prefLabel      "bsam grub pho brang (yab gzhis)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM099AF8509B30F484 , bdr:CM0E84CCE25269F195 , bdr:CM1D4C4D01259E36D0 , bdr:CM38498D033D0621EB , bdr:CM50752EDF2568B55F , bdr:CM6989D24B59A7C2F4 , bdr:CM6C411BB07142744F , bdr:CM6D49EED9F9617131 , bdr:CM708BCD9790CE0897 , bdr:CM73F5264A880A39FA , bdr:CM8D8F98A3288F542B , bdr:CMA74E2CAA32DAC475 , bdr:CMD5439502F4AF7079 , bdr:CMD7B1E00DE810627A , bdr:CMDA2F7686D48ED36E , bdr:CMDA4C5A7130F3F7E6 , bdr:CME1097F6180EEA0AB , bdr:CME9D50B92FF65FA5C , bdr:CMEA3034BAD0D3956B , bdr:CMF9288576F5548EE8 ;
+        :corporationRegion  bdr:G2133 ;
+        :note               bdr:NT60F5B90AE0A731FE .
+    
+    bdr:CM099AF8509B30F484
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS171 .
+    
+    bdr:CM0E84CCE25269F195
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS213 .
+    
+    bdr:CM1D4C4D01259E36D0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS211 .
+    
+    bdr:CM38498D033D0621EB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS169 .
+    
+    bdr:CM50752EDF2568B55F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS164 .
+    
+    bdr:CM6989D24B59A7C2F4
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS170 .
+    
+    bdr:CM6C411BB07142744F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS168 .
+    
+    bdr:CM6D49EED9F9617131
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS166 .
+    
+    bdr:CM708BCD9790CE0897
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P179 .
+    
+    bdr:CM73F5264A880A39FA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS209 .
+    
+    bdr:CM8D8F98A3288F542B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS165 .
+    
+    bdr:CMA74E2CAA32DAC475
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS212 .
+    
+    bdr:CMD5439502F4AF7079
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS162 .
+    
+    bdr:CMD7B1E00DE810627A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS167 .
+    
+    bdr:CMDA2F7686D48ED36E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS210 .
+    
+    bdr:CMDA4C5A7130F3F7E6
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS208 .
+    
+    bdr:CME1097F6180EEA0AB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS161 .
+    
+    bdr:CME9D50B92FF65FA5C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS207 .
+    
+    bdr:CMEA3034BAD0D3956B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6720 .
+    
+    bdr:CMF9288576F5548EE8
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS163 .
+    
+    bdr:NT60F5B90AE0A731FE
+        a                   :Note ;
+        :noteText           "The name is commonly abridged as Sampo. This is the family of the 7th Dalai Lama.\nIts founder Sonam Dargye is a figure of some one in Tibetan history of the early 18th century. Although born at Gyantse, he belonged to Chongye family. At first he became a monk at Drepung. Late the administrator of that monastery sent him to Lithang in Eastern Tibet, where he turned layman and married. His first born was seen rumoured to be the incarnation of the 6th Dalai Lama. Lajang Khan twice sent some officers of his to make enqueries, but Sonam Dargye brought his child into safety first to Dege, then to Kokonor, where the Qoshot princes recognised and protected him. The emperor interested them both in the Kubum monastery; but the Zungar invasion of Tibet induced him to grant recognition and support to the new incarnation. Father and son were brought to Lhasa by the imperial army on 16th October, 1720, Sonam Dargye developed a particular attachment to the royal shrine of Samye, where he started restoration work and the building of new chapels in 1722, and where he received in state his son in 1724 and 1725. He was still there in 1726, whom he errected a statue of Dipamkara; and at the end of the same year or early in 1727 Pholha paid him a visit. From the very begining he acquired a position of great influence in Tibetan politics. But in the civil war of 1727-1728 he backed the wrong horse, fell into disgrace and was banished with his son to Eastern Tibet. Early in 1729 he was summoned to Peking to stand an enquiry. However, the emperor did not wish to hurt the feeling of the Yellow Church; so he pardoned the miscreant and even granted him the title of fu-kwa kung (29th June 1729). After some years of exile at Garthar, the Dalai Lama and his father were allowed to return to Lhasa (1735). However, the new Kung had to give an assurance never again to meddle with politics; and to ensure his compliance, he was debarred from staying permanently in Lhasa. He took up his residence in Zangri valley, a nothern tributary of the Tsangpo; but not even there was he master in his own house, because the estate was granted not to him, but to his younger son Kunga Tenzin. Father and son built near the village of Zangri Khangmar the palace of Samdup Phodrang, which gave the name to the family. From his new abode he did not move, except for his trips to Lhasa on the occassion of the Monlam and for a visit to Samye. And in this humiliatiing position of half-exile be remained untill his death in March 1744.\nHis younger son Kunga Tenzin was enfeoffed in 1735 with the estate of Zangri , Samdup Phodrang and Samye, and was given title and and seal of Acitu Darhan. On 23rd August 1744 the emperor granted him the continuance of the title of Kung. The name of he new duke occurs fairly frequently in the DL7, but always in connection with ceremonies, travels and the like; the Chinese texts have little to add and it appears that he played no political role. His normal residence contained to be Zangri, where in 1754 he entertained his brother. In any case, his prestige was such, that in 1763 he as appointed Kalon in the vacancy caused by the demise of Dokhar Tsering Wangyal. But even in his new position he continued to be a rather unconspicous figure. He died early in 1773.\nHis son Tashi Namgyal succeeded to the title. He maintained the usual formal contacts with the Dalai Lama, the Panchen and regent. In 1783 the emperor promised him the expectancy of the first vacant seat in the Kashag, but not the continuance of the title to his descendants; after his death it was to be reduced to a first-class taiji, hereditary forever. He continued to be in fairly close and cordial relations with the regent, and in 1787 he and his son founded in Lhasa a new chapel, the Nechu lhakhang. At last during the New Year's festival of 1788 he received the appointment to the seat in the Kashag left vacant by the death of Thonpa Srid zhi wangdu. In the 2nd month of the same year he was sent to Tashi Lhunpo to wait upon the Panchen, in the company of the amban Yamantai; shortly afterwards, in the 7th month, he inspected Nyan non, i.e. the district of Tashi Lhunpo. But then something happened of which no trace is preserved in the sources, and he retired or was dismissed from his seat, because he was not included in the Kashag at the time of Samati Pakshi return to Tibet (12th month of 1790). The Chinese texts too, although mentioning him occassionally, never given him the title of Kalon. Thus he had gone out of Kashag in 1789 or 1790. In 1791 he was commanding some Dam Mongol troops sent to Nyalam, and on 16.VIII (13th September) he fell in battle against the Gorkhalis.\nHis brother Kelsang Tenzin Namgyal became a monk and ultimately rose to the post of Kalon Lama.\nAnother member of the family was the nephew (Kutsa), or rather grand-nephew of the 7th Dalai Lama called Losang Tashi, who was initiated in 1786 and was Geko chenmo in 1788.\nAs already laid down by the emperor, Tashi Namgyal's son Chagdor Wangchuk (d. 1817) inherited the rank of first-class taiji, and by this title, often abridged as Sampo taiji, he is repeatedly mentioned in the first  years of the 19th century, although his personal name never appears in the Tibetan Texts. The same applies to his son Solhun Phuntsok (d. 1831), who as a second-class taiji. Neither father nor son entered government service.\nOn the contrary, Solhun Phuntsok's son Gyaltsen Ngodup appears repeatedly in the Tibetan texts, although they as usual are silent about his personal name, known only from the Chinese sources. In 1841 he was sent to Mongolia to obtain information on the illness of the Jetsundamba Qutuqtu; at that time he was already a 1st class taiji. In 1844 he accompanied as far as Markham the amban Ming-pao returning to Peking. In 1847-1848 he went with the Kalon Shadra to Dakyab, and his activity there earned him from the emperor an unspecified promotion. He first appears as Kalon when on 29.VI, 1852, he came from Lhasa to join the Dalai Lama, then travelling in Southern U; on 8-9. VII he entertained him lavishly at Zangri Khangmar. He is again mentioned in possing in that year and in the following. In 1854 he was contibuting to the expenses of the restoration of Samye and in 1856 he signed, along with the other Kalon, the peace treaty with Nepal. \nAnother member of the family was Sampo Damcho Phelgye, who made his career among the monk officials. He was Tsedrung in 1849-1850 and was appointed Tsedron in 1854. \nThe name of Ggyaltsen Ngodup's successor to the taiji title and to the family estates is found nowhere. We can only say that he was the Sampo taiji who in 1873 was in partial charge of the travel arrangement for the Dalai Lama (with base at Dansathil) and who in 1874 entertained him at Zangri. The yabzhi Sampo occurs in 1879 and in 1886. \nIn 1900 the descendant (rigse) of his family, by name Chagdor, received the imperial edict confering upon him the taiji title, just about the time when the Dalai Lama was visiting that regions; the ruler was received with great honours at the Samdup Phodrang palace in Zangri Kharmar. In spite of the difference of name, Chagdor must be the same as the \"first class taiji of Tibet\" sung tsan-chi-to, who in 1900 was given that title as the successor of his brother Norbu Dadul deceased. Anyhow, this is the yabzhi Samdup Phodrang mentioned in 1901 and perhaps also in 1912 and 1923.\nChagdor's son taiji Tsewang Rigzin (b. 1905) entered government service in 1919; in 1924 he was tokzin of Garpa. Later he became a Zhol depa and then a Tsipon. His title of taiji was taken away in 1931 and restored in 1937. He attended the inter-Asian conference held at Delhi in March 1947. In 1957 he was appointed Kalon. He was one of the fore-most supporters of the new regime. In March 2959 he became Deputy Commander of the Tibet Area Command. When on the 10th the situation grew very tense, he drove in a Chinese staff car to the Norbulinka; the tibetan crowd stoned the car and he was seriously wounded. On 28th March he put his signature to the proclamation of the Tibet Area Command against the rebels. Shortly afterward he became a member of the National Defence Council and of the Standing committee of the Preparatory Committee for the Tibet Atunomous Regions, and in 1962 he was appointed member of the Election Committee for the Autonomous Region. In February 1967 he was accused of being head of a renegade clique, whereupon he was deprived of all his posts. No information after that date is forthcoming.\nSampo se Palden Chowang (b. 1902) entered the service in 1920, and in 1924 was chief of the police (godom katsab) in Lhasa; nothing else is known about him. He may have been a brother of the above.\nTsewang Rigzin's son Sampo se Tenzin Dondup (b.1924) was Kadrung chungwa in 1942. The he became a rimzhi and in February 1951 was sent from Lhasa to Peking via Chamdo, as a member of the Tibetan delegation who negotiated and signed the Sino-Tibetan agreement. In 1952 he was a Dopon. In March 1959 he was among the Tibetans who tried to defend the Potala; he was imprisoned by the Chinese and was freed after a couple of years in bad condition of health. He fled to india in 1980s and died in 1990s at Dehra Dun, India.\nThe elder sister of Chagdor married Zurkhang Norbu Tsering, who as magpa took the family name Samdup phodrang. In 1909 he was Tsechag and early in 1910 the Dalai Lama appointed him acting Kalon on or shortly before his flight to India. He died in India in 1910. \nDuring the First World War his son Padma Dorje was sent to Quetta for military training; he was dismissed from the army with other officers in 1924.\n(Petech L., Aristocracy and Government in Tibet, p. 32-39, Roma 1973. Also see Mi tshe'i rba rlabs 'khrugs po by bsam pho bstan 'dzin don grub, Rajpur, Dehra Dun 1987)"@en .
+}

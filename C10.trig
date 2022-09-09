@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C10 {
+    bda:C10  a              adm:AdminData ;
+        adm:adminAbout      bdr:C10 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "da/C10.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C10 ;
+        adm:logEntry        bda:LG33F023E1A41D262B , bda:LGE6BC7B930E5E3124 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33F023E1A41D262B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE6BC7B930E5E3124
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:50.697Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C10  a              :Corporation ;
+        rdfs:comment        "sde dpon family"@en ;
+        skos:altLabel       "rag kha shar (sde dpon)"@bo-x-ewts ;
+        skos:prefLabel      "mdo mkhar (sde dpon)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM006078498957EC94 , bdr:CM05C9720B7E92A78D , bdr:CM08B4206418A27620 , bdr:CM195CD87D0E1A87B0 , bdr:CM3F96E917BFB1B9E3 , bdr:CM4F8B5EDB472582DB , bdr:CM5D5CAB8951956028 , bdr:CM76A2A9095AAD8848 , bdr:CM78329E03E2AA6C45 , bdr:CM833375CC1701515B , bdr:CM84C6ADA40361C2B8 , bdr:CMB2CEDFC306192A38 , bdr:CMCC94357C8359872D , bdr:CMD6DFF8C18B6A13C0 , bdr:CMD767B86281966637 , bdr:CMDDC109BBA72D0CD1 , bdr:CMF9B13C13B31048EB ;
+        :corporationRegion  bdr:G957 ;
+        :note               bdr:NTF5BEF126C14DE151 .
+    
+    bdr:CM006078498957EC94
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS221 .
+    
+    bdr:CM05C9720B7E92A78D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS234 .
+    
+    bdr:CM08B4206418A27620
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS223 .
+    
+    bdr:CM195CD87D0E1A87B0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS233 .
+    
+    bdr:CM3F96E917BFB1B9E3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS230 .
+    
+    bdr:CM4F8B5EDB472582DB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS232 .
+    
+    bdr:CM5D5CAB8951956028
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS227 .
+    
+    bdr:CM76A2A9095AAD8848
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS222 .
+    
+    bdr:CM78329E03E2AA6C45
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS225 .
+    
+    bdr:CM833375CC1701515B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS224 .
+    
+    bdr:CM84C6ADA40361C2B8
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS228 .
+    
+    bdr:CMB2CEDFC306192A38
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6731 .
+    
+    bdr:CMCC94357C8359872D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS231 .
+    
+    bdr:CMD6DFF8C18B6A13C0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS226 .
+    
+    bdr:CMD767B86281966637
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6716 .
+    
+    bdr:CMDDC109BBA72D0CD1
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS229 .
+    
+    bdr:CMF9B13C13B31048EB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P343 .
+    
+    bdr:NTF5BEF126C14DE151
+        a                   :Note ;
+        :noteText           "Another name is Rakashag or Rakashar, which is the name of their Lhasa mansion near the Trulnang. It is found for the first time in 1761 and in the DL8 it alternates freely with Dokhar; today it is perhaps the more common of the two.\nThis family is from the gazi clan, hereditary hierachs of is the Taklung Kagyud pa tradition, one of the two Depon families (the other is Lhagyari) descended from the ancient royal dynasty. \"Owing to their historical ancestry the head of the family receives both civil and religious honours on state occassions including installation of the Dalai Lama. Peasants of the estate always greet the head of the family with the obeisance accorded only to high relgious dignitaries and monks in memory of their ancestors. Monks of the Taklung monastery always bow to the male members of the Dokhar family, whenever they visit there. Their dead bodies or ashes are always preserved in this monastery. The Taklung monastery has three incarnate abbots: 1) Zhabdrung Rinpoche, 2) Ma rinpoche, 3) Tsetrul rinpoche; male children of the Dokhar family taking up robes fill whichever abbotship may happen to be abailable.\nAt the begining of the 18th century their head was Nagwang Tshangpa; he played no part in the history of his time and died in 1724.\nThe political importance of the family began anew with his son Tsering Wangyal (1697-1763). He studied first at Sera and later with the ill-fated Lochen Dharmashri, incarnate of Mindoling, who was executed by the Zungars in 1718. He entered the service of Lajang Khan and in 1717 he was already Zongpon of Shigatse. Under the regims of the Zungar puppet Taktse pa he was relieved from this post on his own request and was appointed Zongpon of Cagtse Drigu. This early start was ruined by the Chinese invasion and the execution of his protector; the two Dokhar father and son were dismissed and sent back to Taklung. Tsering Wangyal had to start his career from the bottom, as simple Drungkhor (1721). But already in 1723 he officiated for some time for Tsipon Pholha nas, who had been sent to the Nagchu as a measure of precaution when Lobjang Danjin started his rebellion in Kokonor. In 1726 he became titular Tsipon, and this was his position when the civil war broke out. He took a lukewarm part in it as an officer in the Lhasa army, and after its end attached himself at once to the rising star of Pholhanas. In 1728 the later appointed him Kalon and in the following year, having escorted the exiled Dalai Lama on the first stages of his journey to Lithang, the emperor confirmed his appointment and granted him the title of jasak Ist-class taiji. In 1730 he was sent to Gyantse to supervise the Tibetan intervention in Bhutan and stayed there during the following three years; and at Gyantse in November 1733 he finished writing the biography of Pholha nas. In 1734 the Tibetan ruler, as an acknowledgement and a moral reward, sent him to Garthar to inform the Dalai lama of the successful solution of the Bhutan question. The following years were rather unevetful. Then in 1743 he was placed in charge of the arrangement for the Zungar mission due to visit Lhasa; the emperor sent him some modest presents as a reward for his activity. Under the rule of Gyurmed Namgyal he participated in the reception to the Zungar mission of 1748 and was again rewarded by the emperor. A little later he came under heavy suspicion by Gyurmed Namgyal who accused him of conspiring with the unfortunate Mngari kang Yeshe Tseten; in a stormy interview he narrowly missed being killed by the angry ruler. Immediately after he was sent to the Nagchu to meet Gyurmed Namgyal's bride, the Mongol princess Samdup Dolma. He was encamped there, when he received the news of Gyurmed Namgyal's murder and of the lynching of the two ambans; at once he returned to Lhasa. But as soon as duke Pandita and the Dalai Lama had brought the situation under control, he went back to the Nagchu to complete his mission. When the Chinese commission arrived, he was well received by them, explained his position and was confirmed in office (1751). In 1752 he was placed in command of the troops who were to be concentrated in the Tengri-nor zone, to oppose  a possible Zungar invasion; but the rumour proved unfounded, and as soon as this assignment was at an end, he applied for leave and returned for a spell to Taklung (1753). In the following year he accompanied the Dalai Lama in his journey to chokhor gyal. The ruler was so pleased with him, that in 1756 he granted him an additional number f serfs. He maintained his position after the death of the Dalai Lama in 1757 and the appointment of the Demo Trulku as regent, and died in office on 6.X, 1763. With him disappeared the ablest of the old lieutenants of Pholhanas.\nHis brother Tashi Paldak was the incarnate of Riboche tse, and in 1763 was stil living there.\nTsering wangyal's son Tashi Wangchuk Legpa married in 1753 he daughter of Dapon Rampawa. He died before his father.\nHis son Sonam Wangyal (1756-1788) inherited from his grandfather the title of first-class taiji. In 1768 he presented gifts to the Namgyal Dratsang. Already in 1773, at the early age of 17, he was appointed a Kalon in the vacancy caused by the death of Samdup Phodrang Kunga Tenzin. In 1775 he accompanied the second amban Heng-hsia in his tour to Tsang. In 1779 he escorted the Panchen from Nagchuka to the banks of the Drichu on his journey to China, and in the same year he participated in the restoration work at the Trulnang in Lhasa. In 1781 he accompanied the second amban Heng-shui in his visit to Tsang, and later in the same year he went, with several other offcials, to most the remains of the Panchen coming back to Tibet. In 1783 he was the patron of the Monlam and was again sent with the amban to Tsang. He accompanied the former Samati Iakshi travelling to China, as far as Taklung da (1786). He died, reportedly by suicide, in July 1785.\nHis younger brother Sonam Topgyal, also called Thutop, became a monk and is mentioned in passing in 1779, 1781 and 1791.\nupon the death of Sonam Wangyal, the amban Yamantai proposed to the emperor to grant the continuation of the title to his elder son Sonam Wangdu. But in the meantime the imperial commissioner had reported that the late Sonam Wangyal had received unlawful presents from the Nepalese merchants, with the complicity of their headman Hahu, and that he had not forwarded a communication of the Gorkha ruler to the Chinese authorities, despatched in the previous year through Hahu; so that his curruption and exactions had contributed not a little to start the conflict with the Gorkhalis. The amban Ch'ing-lin and Yamantai had overlooked, perhaps even connived at, his behaviour. Thus the family had to pay for the misdeeds of its dead chief: Sonam Wangdu was debarred from the post of Kalon and was not allowed to inherit the title of jasak taiji; that is the last we hear about him. The house of Dokhar stayed out of office for a considerable time, though maintaining its high position in the Tibetan nobility.\nA Kadron Ragshagpa was appointed Zongpon of Chongye in 1815.\nThe next figure of some distinction was Gyurmed Tsewang Paljor (1804-1842). In 1831, being a Tsipon, he caused the biography of Tsering Wangyal to be added to the history of the Taklung chiefs. He still held the same office in 1837-1838, when he took part in the campaign against Powo; on 27th january, 1839, the emperor promoted him to the third rans and granted him the peacock feather. On 26th October, 1839, the amban Meng-pao recommended him to the emperor for appointment to the seat of the Kashag vacated by the retirement of Shadra Dondup Dorje; the decree to this effect was received on 6th January, 1840. In the Tibetan texts he appears for the first time as Kadron in the spring of 1841. later in the same year he was appointed to lead, under the command of Zurkhang, the Tibetan army sent to Mngari to stem the advance of Zoravar Singh and his Dogras; he left Lhasa on 29th August. It appears that be played a secondary role; neverthless on 25th April, 1842, the Lhasa authorities recommended him for promotion to the second rank. When the ill-fated expedition to forced marches to reinforce the Tibetan army at Lung ogma. According to the official version, \"the difficult journey over two consecutive mountain passes exhausted the Kalon who, moreover, was greatly anxious over the situationat the front. Spitting out blood, he died instantly. But the Ladakhi sources tell us that he was made prisoner and committed suicide; the account of an old soldier, Tseten says that he was decapitated; this is, however, less likely. Probably the Ladakhi tale is nearest to the truth, and the Tibetan authorities, is making their report to the ambans in Lhasa, glossed over the unpleasant fact of the defeat.\nHis son Namgyal Wangdu Dorje was not allowed to succeed in the seat of his father, but was appointed U Dapon as the successor of Shadra promoted Kalon (january 1843). We hear nothing further about him, unless he is to be identified with the Depon Dokharwa mentioned in 1843 and is 1849-1850.\nAnother Dokharwa appears as Tsipon in 1847, when he returned to Lhasa from a mission with Kalon Pal lhun, and in 1848. He was appointed Kalon in 1859. He is again mentioned in 1860, and in that year he accompanied the regent to Tashi Lhunpo for the enthronment of the new Panchen. At the time of the rebellion of the monasteries against the regent Rating Trulku in 1862, he was prominent among the lay officials who sponsored the grant of nominal authority to the infant Dalai Lama. He is not mentioned afterwards.\nHis son Dokhar se Tsewang Norbu was appointed U Dapon in 1862. On II.X, 1866, he was given the third-class button and the peacock feather. On 25. VI, 1871, he was appointed Kalon. In 1875 he was in charge of the construction of the tomb of the 12th Dalai Lama. In 1877 he took part, as it seems, in the dealing with the Chinese authorities which resulted in the emperor releasing Tibet from the obligation to select the new Dalai Lama by drawing lots from the golden bowl. In 1878 he met the Panchen who had come to Lhasa. In the winter of 1878-1879 he and the Chinese commissioner Chou Chen were assigned the task of keeping an eye on the affairs of Sikkim, where the British were building a cart road to the Jelep pass; all information comming in from Sikkim was to be handed over to the two officails. Otherwise Tsewang Norbu was not much in the foreground and is merely mentioned in passing in 1881 and 1886. In 1889 he was on leave of absence, and this appears to have been his position as late as 1894, when Lachag Yuthok khenchung Jamyang Tenzin was his deputy. He formally retired in 1896 and became a monk, dying in 1902. His duaghter married in 1870 the king of Derge.\nHis son Dokhar se Tseten Wangchuk entered the civil service in 1879; on that occasion he, as a representative of the young nobles, have a display of his knowledge of grammatical texts in the presence of the Dalai Lama. He may be identical with the Sherpang Tseten Wangchuk who in 1890 was granted the expectancy of a post of Dapon. He did become a Dapon, but his later career is unknown. His son Dokhar se Tenzin Namgyal (1886-1935) entered the service in 1902; he may be the same as the Dokhar mentioned without titles in 1902-1903. In 1910 he was a senior master of the stable (chibche) and was sent to confer with the Dalai Lama, then a refugee at Darjeling. In 1924 he was a phogpon, later a chagzod. Then he shifted to the military career and became a Dapon. He received the command of the bodyguard (Kusung magar) in 1933 and died in 1935.\nHis younger brother Tsewang Namgyal (b. 1887) entered government service in 1902. He seems to be identical with the Dapon Rakashar who in 1912 went to Phagri to dissuade the Dalai Lama from coming back at once to Lhasa, where the Chinese garrison still offered resistance. In the following years he came to be known by the name of Jepad. In 1918 he led some fresh units to reinforce the Tibetan army in Eastern Tibet, after which he held a command at Markham, guarding the border toward Batang. In 1922 he left the army and became a Tsipon; he appears as such in 1924, after which date nothing more is heard of him.\nRakashar se Phuntsok Rabgye (1903-1957), a son of Tenzin Namgyal, entered the service in 1921 and was Kadron at the end of 1923. He was a Kadron from 1928 to 1932, and became Tshona zongpon in 1933, Sherpon in 1937, jasak and Dapon in 1938. In September 1940 he was appointed commander-in-chief. In 1949 he was nominated Kalon. On 10th February, 1952 he became concurrently 2nd deputy commander of the Tibet Military Area and a Chinese Lieutnant-general, with the task of integrating the Tibetan units in the Chinese army; he was also a member of the Preparatory Committee for the Tibet Autonomous Region. He died on 13th March, 1957.\n\n(Petech L., Aristocracy and Government in Tibet, p. 70-79,  Roma 1973. \nAlso see bka' blon rtogs brjod, Si khron mi rigs dpe skrun khang 1981)"@en .
+}

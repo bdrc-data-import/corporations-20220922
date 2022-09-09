@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS214 {
+    bda:C11MS214  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS214 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/C11MS214.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS214 ;
+        adm:logEntry        bda:LG0379177999F18532 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0379177999F18532
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:48:36.899Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS214  a         :Corporation ;
+        skos:altLabel       "Rok"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "rog"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMFEAC82FD543737BE ;
+        :note               bdr:NT3D927A88FD344669 .
+    
+    bdr:CMFEAC82FD543737BE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4301 .
+    
+    bdr:NT3D927A88FD344669
+        a                   :Note ;
+        :noteText           "The Rok clan dates to the early dissemination of the Buddhist teachings in Tibet, the so-called Tenpa Ngadar (bstan pa snga dar). The first major figure of this clan was Rok Namkha Yeshe (rog nam mkha' ye shes), one of two brothers who were the recipient of the entire lineage of a certain Gyelwa Tenne (rgyal ba rten ne), a figure of some confusion in the Blue Annals. Longchenpa's father traced his ancestry back to Yeshe Wangpo Rung of the Rok clan."@en .
+}

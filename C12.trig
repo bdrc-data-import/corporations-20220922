@@ -1,0 +1,140 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C12 {
+    bda:C12  a              adm:AdminData ;
+        adm:adminAbout      bdr:C12 ;
+        adm:facetIndex      27 ;
+        adm:gitPath         "e7/C12.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C12 ;
+        adm:logEntry        bda:LG0BB53AE0D2F93F17 , bda:LG209C31287E132276 , bda:LG83F56E69FC02A2CC , bda:LG9CBA60F1486F6059 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0BB53AE0D2F93F17
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-13T16:20:23.131Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG209C31287E132276
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-13T15:13:21.719Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG83F56E69FC02A2CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9CBA60F1486F6059
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:53.347Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C12  a              :Corporation ;
+        rdfs:comment        "sde dpon family"@en ;
+        skos:prefLabel      "lha rgya ri (sde dpon)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM089EFDF426D50C9F , bdr:CM0D8FF7E756639000 , bdr:CM141BA134DD8613E0 , bdr:CM16521483C998CCC2 , bdr:CM175AA52D6154CA25 , bdr:CM19B28C3A1D2D5163 , bdr:CM21A64BE457897B79 , bdr:CM4459F9C1CE2B3492 , bdr:CM68FC97DAE06EDA53 , bdr:CM6DF77DF0AC721192 , bdr:CM7F336F8F5743D8BF , bdr:CM82DC8BE1EA85A23A , bdr:CM872002D2DF201AE8 , bdr:CM8ED8EEDE93A704F9 , bdr:CM9E4E1569619C0426 , bdr:CMAA892B2E5E2AF429 , bdr:CMADC94700F26CFACB , bdr:CMAE92FFB69809DC5D , bdr:CMC264D8CB5A826372 , bdr:CMC6C3E2949E2AD1EE , bdr:CMCDD52D7CCB2ECD45 ;
+        :corporationRegion  bdr:G2397 ;
+        :note               bdr:NT71163AA4722702F7 .
+    
+    bdr:CM089EFDF426D50C9F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS270 .
+    
+    bdr:CM0D8FF7E756639000
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS261 .
+    
+    bdr:CM141BA134DD8613E0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS271 .
+    
+    bdr:CM16521483C998CCC2
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS276 .
+    
+    bdr:CM175AA52D6154CA25
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS272 .
+    
+    bdr:CM19B28C3A1D2D5163
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS273 .
+    
+    bdr:CM21A64BE457897B79
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS280 .
+    
+    bdr:CM4459F9C1CE2B3492
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS265 .
+    
+    bdr:CM68FC97DAE06EDA53
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS269 .
+    
+    bdr:CM6DF77DF0AC721192
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS260 .
+    
+    bdr:CM7F336F8F5743D8BF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS282 .
+    
+    bdr:CM82DC8BE1EA85A23A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS263 .
+    
+    bdr:CM872002D2DF201AE8
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS264 .
+    
+    bdr:CM8ED8EEDE93A704F9
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS266 .
+    
+    bdr:CM9E4E1569619C0426
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS278 .
+    
+    bdr:CMAA892B2E5E2AF429
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS279 .
+    
+    bdr:CMADC94700F26CFACB
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS281 .
+    
+    bdr:CMAE92FFB69809DC5D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS277 .
+    
+    bdr:CMC264D8CB5A826372
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS268 .
+    
+    bdr:CMC6C3E2949E2AD1EE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS274 .
+    
+    bdr:CMCDD52D7CCB2ECD45
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS267 .
+    
+    bdr:NT71163AA4722702F7
+        a                   :Note ;
+        :contentLocationStatement  "pp. 29-47" ;
+        :noteSource         bdr:MW1GS44028 ;
+        :noteText           "ལྷ་རྒྱ་རི་སྡེ་དཔོན་སྐོར་ལོ་རྒྱུས་རྒྱས་པ་གཟིགས་འདོད་ན་བོད་རྗེ་ཆོས་རྒྱལ་གྱི་གདུང་རྒྱུད་སྡེ་དཔོན་ལྷ་རྒྱ་རིའི་གདུང་རབས་རིན་ཆེན་ཕྲེང་བ་དང་ལྷ་རྒྱ་རིའི་ལོ་རྒྱུས་ཕྱོགས་བསྒྲིགས།\t\tབོད་ཀྱི་ལོ་རྒྱུས་རིག་གནས་དཔྱད་གཞིའི་རྒྱུ་ཆ་བདམས་བསྒྲིགས།\tའདོན་ཐེངས་\t༡༩།\tཤོག་གྲངས་་\t༢༩་ནས་༤༧\tགཉིས་ལ་གཟིགས།"@bo .
+}

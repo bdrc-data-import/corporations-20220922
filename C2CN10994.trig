@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10994 {
+    bda:C2CN10994  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10994 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e2/C2CN10994.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10994 ;
+        adm:logEntry        bda:LG47A0A0ED9CE2CED2 , bda:LG5010728DFBC64FAC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG47A0A0ED9CE2CED2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-29T11:32:41.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5010728DFBC64FAC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-17T15:40:51.913Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 2 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10994  a        :Corporation ;
+        skos:altLabel       "nyag rong lcags mdud pa mi rgyud/"@bo-x-ewts , "sbrul mdo sbra rgan tshang /"@bo-x-ewts , "spos mdo sbra gsar tshang /"@bo-x-ewts ;
+        skos:prefLabel      "lcags mdud gdung rgyud/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM6DD6D64BB95A9895 , bdr:CM8DA1953D1976743C ;
+        :note               bdr:NT185C5D9EF12407E0 , bdr:NT2FDD45D369E27BA7 .
+    
+    bdr:CM6DD6D64BB95A9895
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6010 .
+    
+    bdr:CM8DA1953D1976743C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5994 .
+    
+    bdr:NT185C5D9EF12407E0
+        a                   :Note ;
+        :noteText           "need to add region as nyag rong: G1365"@en .
+    
+    bdr:NT2FDD45D369E27BA7
+        a                   :Note ;
+        :noteText           "'di sbra rgan tshang dang sbra gsar tshang khag gnyis su gyes yod par snyam pa mu mthud dpyad rgyu/"@bo-x-ewts .
+}

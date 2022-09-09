@@ -1,0 +1,112 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C4 {
+    bda:C4  a               adm:AdminData ;
+        adm:adminAbout      bdr:C4 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "b7/C4.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C4 ;
+        adm:logEntry        bda:LG3B0B64C7CCA5D002 , bda:LG56CC1362E05E7469 , bda:LGE872F5D9EE52952F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B0B64C7CCA5D002
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-16T16:29:48.102Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG56CC1362E05E7469
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:02.501Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE872F5D9EE52952F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C4  a               :Corporation ;
+        rdfs:comment        "yab gzhis family"@en ;
+        skos:prefLabel      "g.yu thog (yab gzhis)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM06B49600CE77D3FA , bdr:CM18DEFF18D1F4B72D , bdr:CM1CACA66A39F6E35F , bdr:CM2109E9EAD35BBED7 , bdr:CM2764281CBDDBCE15 , bdr:CM27A8C66250458610 , bdr:CM2937E6DB3FDE6EF2 , bdr:CM365CAA10AE499F59 , bdr:CM36F556DB5A7C917E , bdr:CM43F5A4B374186369 , bdr:CM4D5049607002AC18 , bdr:CM848083300D4AEFA9 , bdr:CM98FE46C76BE72FB4 , bdr:CMABEFEDE682BE7713 , bdr:CMC1A234A534DCBC10 , bdr:CMFFA32D46C4426C21 ;
+        :note               bdr:NTF5E271DBDB832AA7 .
+    
+    bdr:CM06B49600CE77D3FA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS155 .
+    
+    bdr:CM18DEFF18D1F4B72D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS156 .
+    
+    bdr:CM1CACA66A39F6E35F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P243 .
+    
+    bdr:CM2109E9EAD35BBED7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS153 .
+    
+    bdr:CM2764281CBDDBCE15
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS205 .
+    
+    bdr:CM27A8C66250458610
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6722 .
+    
+    bdr:CM2937E6DB3FDE6EF2
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P260 .
+    
+    bdr:CM365CAA10AE499F59
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS204 .
+    
+    bdr:CM36F556DB5A7C917E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS154 .
+    
+    bdr:CM43F5A4B374186369
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6697 .
+    
+    bdr:CM4D5049607002AC18
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS160 .
+    
+    bdr:CM848083300D4AEFA9
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS157 .
+    
+    bdr:CM98FE46C76BE72FB4
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS159 .
+    
+    bdr:CMABEFEDE682BE7713
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6754 .
+    
+    bdr:CMC1A234A534DCBC10
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6729 .
+    
+    bdr:CMFFA32D46C4426C21
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS206 .
+    
+    bdr:NTF5E271DBDB832AA7
+        a                   :Note ;
+        :noteText           "This is the family of the 10th Dalai Lama, founded by his father Losang Nyendak. In 1822 the emperor conferred upon him the rank and button of a first class taiji. But already in the 8th month of 1822 he applied for and obtained leave from the emperor to quit Lhasa, whose climate did not agree with him, and to return to his home in order to recover his health. He died on 22.IX. 1824.\nHe was succeeded by the Dalai Lama's youngest brother Kelsang Phuntsok, who had come to Lhasa in 1822. In the 11th month of 1824 he was granted the title and estates of his father, the great being made public in Lhasa during the New Year's festival of 1825. In the same 1825 he was given the estate of Yuthok, which had been confiscated from the Bumthang family in 1792; it takes its name from the mansion near the Turquoise Bridge (yuthok zampa) at Lhasa. His name is often mentioned (but ony on formal occassion) even after the decease of his brother, for the last time in 1848. It seems that the tirle of taiji was not maintained to his descendants.\nAnother member of the family was Dorje Rabten, who first appears in 1826 as son in connection with the mother of the Dalai Lama. He cannot possibly be a son of Kelsang Phuntsok, because the later was born in 1817 at the earliest and in 1826 was still a little boy. He was apparently a half-brother of the Dalai Lama. He could be the same as the Yuthok se who appears in 1848, 1850 and 1852. Afterwards the style changes, perhaps because he (or another) succeded to the estates of the family; and in 1860, 1862 and 1868 we find a yabzhi Yuthokpa.\nOther member of the family took up official careers in the ecclesiastical branch. Thus we find a khandrung Yuthok Losang Tenzin, who in 1848 was assistant director of the works at Samye (under Kalon Serjung) and is mentioned also in 1852. Another members was Yuthok Losang Wangden, \"nephew of the preceeding Dalai Lama\", who got his first appointment to office in 1854. He is probably the Yuthok Talama, who was appointed Khenchung  in 1859 and is mentioned again in 1860. \n A less shadowy figures is the Yuthok se who appears in 1860 and was appointed Serpon in 1862. He seems to be identical with the Tuthok chagzod of 1867. In any case, he was promoted to Kalon on 7.X.1873. In 1877 Kalon Yuthok was one of the officials who conveyed the 13th Dalai Lama to Lhasa. In 1878 he was still alive, but it appears that he died shortly afterwards; and indeed he is not mentioned by S. Chandra Das at the time of his visit.\nHis son Yuthok Phuntsok Palden (b. 1860), held various offices, then was a Tsechag before he was appointed Kalon at the end of 1903. He played a conspicious role when the British armed mission entered Tibet. First he was sent to persuade the mission not to advance farther, and he had fruitless conferences with Colonel Younghusband at Nangkar tse on and after 20th July 1904. Two months later he was one of the chief negotiators of the Lhasa treaty. He was thus particularly indicated for the delicate task of enforcing its terms; for this purpose, after the British troops had withdrawn, the Tibetan government sent him to open the trade mart at Gyangtse, as a sort of special commissioner. As a consquences, he became a person now greets with the Chinese. the junior amban Chang Yintang accused him, rightly or wronly, of curruption, grasping and oppression, upon which he was removed from office and subjected to an enquiry. It seems that in 1910 he fled to India in the company of the Dalai Lama and died there soon after.\nHis brother was the monk official Lachag Yuthok mkhanchung Jamyang Tenzin, who in 1894 accepted the post of deputy (tsab) for Kalon Dokharwa, who had applied for leave. In 1900, being still in Lachag khanchung, he was in charge of some week in the Trulnang; in the same year he was appointed Cikhyab khanpo. When the British entered Lhasa, he fled with the Dalai Lama to Urga; but in 1906 he was dismissed and sent back to Tibet. He died about 1912-1913.\nThe eldest son of Phuntsok Palden was Tsering Wangdu (b. 1881), who entered government service in 1899. He must be the Serpon Yuthok se who visited the Dalai Lama at Darjeeling early in 1912, and the Yuthok yabzhi of 1912, 1923 and 1925. In 1924 he was Tsechag.\nA brother of his was given in 1892 the name Phuntsok Namgyal; but nothing else is known about him.\nTsering Wangdu's son Tashi Dondup (b. 1906) entered government services in 1924 and was trained as a gunner at Quetta (1925-1926). Upon his return in Tibet he was appointed Kadrung (1926). Only in 1931 he returned to the army; in that year he was given furhther training as machine-gunner at Gyantse, after which he became Dapon (1931-1935) of the \"noble regement (Dondak magar). Later he was Dapon of the bodyguard (1935-1938) and in 1938 was given the title of taiji and was put in charge of the Salt and Tea tax department. The Chinese heard a rumour that in 1939 he tried to overthrow the Rateng regeng in agreement with the Sridlon, but the story is certainly without a real foundation. He was given the title of jasak in 1942 and was appointed Dochi in November of the same year; he left for Kham in April 1943 and came back to Lhasa only in the late autum of 1947. In 1950, when the Chinese troops attacked Chamdo, the Lhasa government appointed him to lead a mission to British, which however, never materialised. In 1955 he became director of the Judicial Office of the Preaparatory Committee for the Tibet Autonomous Region. In 1956 he was appointed Katsab with full ministrerial powers, and in the same year he preceded the Dalai Lama, who was going to India for the celebrations of the Buddha Jayanti. In January 1957 he severed every connection with the Communist regime, refused to return to Tibet and settled at Kalimpong. Therafter from November 22, 1967-1972 lived in Taiwan and then moved to Canada; died in 15th March 1983.\nHis brother Kelsang Rinchen (c. 1907-1972) seperated from the Yuthok family and was known as Dathangpa, from the name of an estate in the Phodang district. He entered service in 1928.\nIn 1937 he visited india to pay for communication supplied to the Tibetan government. In 1938 he became a Zholnyer and in 1944 Neshen to Richardson, the Political Officer in Sikkim. He settled in India before 1958 and died there in 1972.\nA member of the family who is difficult to fit in the frame is Dondup Namgyal (1890-1951), who entered service in 1913 and as a Lhanyer in 1924. He was officially called Se dang se and proved as an elder brother of Tashi Dondup, which of cource is chronologically impossible. Late he came to known as the yabzhi phogpon, aiming to his marriage to a sister of Sridlon Langdun. In that capacity he was put in charge of the property of the 13th Dalai Lama at Norbulinka. In 1942 he was sent to investigate knews created  to people in Western Tibet by wandering Kazaks. He died at Lhasa about 1951 or 1952.\n\n(Petech L., Aristocracy and Government in Tibet, p. 28-32, Roma 1973; Tsering sgrol dkar, Gyu thog sa dbang bkra shis don grub mchog gi sku tse'i byung ba, p.53 and 103, Amnyemachen Institute, Dharamsala 2002 and also see Dorjee Yudon Yuthok, House of the Turquoise Roof, Snow Lion Publication 1990)"@en .
+}

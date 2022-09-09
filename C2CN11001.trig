@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11001 {
+    bda:C2CN11001  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11001 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "be/C2CN11001.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11001 ;
+        adm:logEntry        bda:LG33BAE81510318BE9 , bda:LGC3458B8386D9D06E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33BAE81510318BE9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-23T14:27:20.235Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC3458B8386D9D06E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-29T12:22:11.279Z"^^xsd:dateTime ;
+        adm:logMessage      "added menber"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11001  a        :Corporation ;
+        skos:prefLabel      "ngan lam rgyal ba mchog dbyangs kyi gdung rgyud/"@bo-x-ewts , "ngan lam rgyal ba mchog dbyangs' lineage"@en ;
+        :corporationHasMember  bdr:CM148C1E6496FA3466 , bdr:CM5C7F6E7E53C1A837 , bdr:CMCFA9B2604EA5D033 ;
+        :note               bdr:NTBDED66C38BE7DD86 .
+    
+    bdr:CM148C1E6496FA3466
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5088 .
+    
+    bdr:CM5C7F6E7E53C1A837
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P208 .
+    
+    bdr:CMCFA9B2604EA5D033
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5089 .
+    
+    bdr:NTBDED66C38BE7DD86
+        a                   :Note ;
+        :noteText           "need to add region as yar klung: G1145"@en .
+}

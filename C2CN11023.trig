@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11023 {
+    bda:C2CN11023  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11023 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "72/C2CN11023.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11023 ;
+        adm:logEntry        bda:LG8DF8557065BA7EDA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8DF8557065BA7EDA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-28T11:24:39.059Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11023  a        :Corporation ;
+        skos:altLabel       "myang stod smin gro'i phu kha'u yi mchims rigs/"@bo-x-ewts , "myang stod smon 'gro'i kha'u yi mchims rigs/"@bo-x-ewts ;
+        skos:prefLabel      "kha'u mchims rigs/"@bo-x-ewts , "myang stod Smon 'gro Kha'u in the Mchims lineage"@en ;
+        :corporationHasMember  bdr:CM4EF0A2A25EEB60F6 , bdr:CM51E290549E19C193 , bdr:CMC7AD3FD2D39A9D83 ;
+        :note               bdr:NT84291BAC7BCA689A , bdr:NTC39FE94EED5BB1B9 .
+    
+    bdr:CM4EF0A2A25EEB60F6
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1298 .
+    
+    bdr:CM51E290549E19C193
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1300 .
+    
+    bdr:CMC7AD3FD2D39A9D83
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1060 .
+    
+    bdr:NT84291BAC7BCA689A
+        a                   :Note ;
+        :noteText           "need to add region as nyang stod: G971"@en .
+    
+    bdr:NTC39FE94EED5BB1B9
+        a                   :Note ;
+        :noteText           "see also G877"@en .
+}

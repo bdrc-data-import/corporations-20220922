@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11024 {
+    bda:C2CN11024  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11024 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1c/C2CN11024.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11024 ;
+        adm:logEntry        bda:LG28A9F68226AF6EC1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28A9F68226AF6EC1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-28T11:53:05.113Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11024  a        :Corporation ;
+        skos:prefLabel      "lho brag shud pu'i rigs/"@bo-x-ewts , "shud bu lineage"@en ;
+        :corporationHasMember  bdr:CM104326A4FD1EF5AE , bdr:CM2319FC673447012B , bdr:CM951AF951C9D455E3 ;
+        :note               bdr:NT395C0F0EF2AFCC03 .
+    
+    bdr:CM104326A4FD1EF5AE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5228 .
+    
+    bdr:CM2319FC673447012B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P5227 .
+    
+    bdr:CM951AF951C9D455E3
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1317 .
+    
+    bdr:NT395C0F0EF2AFCC03
+        a                   :Note ;
+        :noteText           "need to add region as lho brag: G1179"@en .
+}

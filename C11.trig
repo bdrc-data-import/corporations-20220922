@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11 {
+    bda:C11  a              adm:AdminData ;
+        adm:adminAbout      bdr:C11 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "a4/C11.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11 ;
+        adm:logEntry        bda:LG733BADB0E53950E5 , bda:LG971379FE3CB6ADC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG733BADB0E53950E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG971379FE3CB6ADC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:52.06Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C11  a              :Corporation ;
+        rdfs:comment        "sde dpon family"@en ;
+        skos:altLabel       "pha jo lha khang pa (sde dpon)"@bo-x-ewts ;
+        skos:prefLabel      "pha lha (sde dpon)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0B3D9A256EB766BA , bdr:CM12FC043F595BA302 , bdr:CM1366B17EA7315732 , bdr:CM42C98ABD6080F720 , bdr:CM4DBED1CABDCA40EF , bdr:CM55BBE9BA6E32F7E0 , bdr:CM88E28E881D100522 , bdr:CM903836145E541C4C , bdr:CM9791FE8CBB03BD83 , bdr:CMBE368278756B6E30 , bdr:CMD74E86C630A76187 , bdr:CMEF903BB8E530EBA0 ;
+        :corporationRegion  bdr:G934 ;
+        :note               bdr:NT8ADBD791A7D80F4E .
+    
+    bdr:CM0B3D9A256EB766BA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS242 .
+    
+    bdr:CM12FC043F595BA302
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS238 .
+    
+    bdr:CM1366B17EA7315732
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS245 .
+    
+    bdr:CM42C98ABD6080F720
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS243 .
+    
+    bdr:CM4DBED1CABDCA40EF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS239 .
+    
+    bdr:CM55BBE9BA6E32F7E0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS236 .
+    
+    bdr:CM88E28E881D100522
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6728 .
+    
+    bdr:CM903836145E541C4C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS235 .
+    
+    bdr:CM9791FE8CBB03BD83
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS241 .
+    
+    bdr:CMBE368278756B6E30
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS237 .
+    
+    bdr:CMD74E86C630A76187
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS240 .
+    
+    bdr:CMEF903BB8E530EBA0
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS244 .
+    
+    bdr:NT8ADBD791A7D80F4E
+        a                   :Note ;
+        :noteText           "The full name of the house is Phajo Lhakhang. The Phalha village, where the British entrenched themselves in 1904, and the family mansion, which was destroyed on that occasion, are near Gyantse.\nThese last-comers among the Depon are descended, according to their family tradition, from a monk of the Phajo Lhakhang monastery in Western Bhutan. He got involved in trouble with his government in which the Tibetans intervened (probably the war of 1644-1647), and having fled from Bhutan he was given an estate that had been taken from the late Tsang ruler. He had no male offspring but only a duaghter, who married a member of the Numawa family; their children carried on the Phalha name.\nThey led an obscure life during the first part of the 18th century. As early mention is in 1783, when the Panchen received in audience a group of petty officials, among whom there was one Wang Phalhawa. This is the Phajo lhakhangpa who was in the staff of Kalon Gazhi Pandita during the Ba senang campaign (1779). He stayed for a long time in that region, and in 1783 he was appointed governor (gopa) of Markham. At an unknown date he came back to Central Tibet, and in the 2nd month of 1791 he was U Dapon, entrusted with the task of a settlement of the cultivators and tilled surface in the district of U. Then at last we come to know his personal name: this is Dapon Tenzin Namgyal, who in the 8th month of 1791 accompanied Samdup Phodrang kung in his march from Lhatse and the Sa-hai river toward Shelkar. There they parted, and he led 500 men to the region of Sumdo, where he joined Dapon Migyur Dorje. On 25th Otober, 1791, he was at Tingkye, where he had a fortunate skirmish with the Gorkhali, killing some fifty of them against a loss of six men. The situation grew tense, and when he reported the wounding and death of Samdup lingpa, a Chinese officer with 300 soldier from Qara-use was sent to Tingkye to support him. On 5th November he had another brush with the enemy, and on 26th November he marched to the Riwo district, where he took eleven prisoners. In the first month of 1792 he was still at Tingkye, and only in the 3rd month he was summoned to Nyalam. In july the Kalon Gazhi Tenzin Paljor is said to have been delivered by the Gorkhalis to Dapon Phajo Lhakhang at Dhibung. Thus he was almost the only Tibetan officer who showed activity and miltary skill in the Gorkha war. This earned him a seat in the Kashag. In the 4th month of 1793 we find Kalon Phalha Tenzin Namgyal charged with the task of quelling a conflict between the people of Jingpa and of Draksum in Kongpo. Many people were killed during the combats in Kongpo and the monasteries of Draksum Lungnang were destroyed. In 1794 the amban Ho-lin sent him with the Chinese officer Chang Chih-lin to delimit the Southern border toward Eastern Nepal, Sikkim and Bhutan; it was an important event, to which the Chinese repeatedly alluded at the end of the 19th century. In the same year he is mentioned in passing by a Tibetan text. Kalon Phalhawa is met with once more in 1801, after which he disppears from the records.\nHis son, the U Dapon Phalhawa or Phalhai se, is mentioned repeatedly between in 1807 and 1813. He was particularly attached to the 8th Drukchen, who blessed his house in 1806 and 1808. In 1813 he appears for the first time as Zhabpad. In the following year he accompanied the amban Hsi-ming to Tsang. In 1823 he sponsored the publication of the supplement to the life of the 8th Drukchen. In 1824 he made a short trip to the Nagtsang district. In 1827 he went for a spell to Olga Chutsan, perhaps to cure himself in the famous warm springs there. In 1828 he accompanied the amban Hui-hsien to an inspection tour in Tsang. He retired at the end of 1829 when Zurkhangpa was appointed as Kalon; the former minister (kazur) Phalha is mentioned in 1830 and 1832.\nAnother member of the family held in 1808 the military rank of Gyapon.\nPhalhai se Kadron Tseten was in 1817 among the officials seat to Lithang to examine the boy who later was accepted as the 10th Dalai Lama.\nA Tsipon Phalha was sent to the Nagchu region to meet the khanpo and the nangso, two Tibetan dignitaries who came from Peking as imperial messengers. In 1829 and 1830 he was among the officials charged with effecting a land-tax settlement (zhibchyod), under the general direction of Kalon shadra. As a reward for his work on this assignement, the emperor granted him the 3rd rank button, with which he was formally invested on 28.VI. 1831. In 1834 he succeeded the deceased Doring as Kalon, the imperial letter of appointment being received in Lhasa on 18.III. 1835. In the 7th month of 1837 he was sent as commissioner in Kham, in connection with the renewal of the difficult campaign in Powo. This is his last mention in the Tibetan texts; we are, however, able to identify him with the Kalon Sonam Gyalpo of the Chinese texts, who in 1838 was rewarded for his work in Powo by the grant of the 2nd-class button and of the peacock feather. In the spring of 1842 he took care of the Dogra and Ladakhi prisoners taken in Western Tibet. This was a part of his duties, because during the Mngari campaign he had stayed in Lhasa in charge of the commissariat and transport service; it worked so smoothly and efficiently, that he was rewarded with the personal titlte of a 2nd-class taiji. He retired at an unknown date (probably in 1843 or 1844) and seems to have been still alive in 1855.\nAn ecclesiastic official (dedrung) by name Phalhawa Losang Chojor occurs only once in 1842.\nSonam Gyalpo's son Padma Gyalpo appears as Tsipon in 1850, when the ambans and the church authorities had to select, by drawing lots from the golden bowl, the new incarnation of the Jetsun Dampa; fate favoured the son of one Migmar, who was a terainer (zhab khong) of the Phalha family. This boy became the seventh Jetsun Dampa. In 1851 Padma Gyalpo was on duty supervising the Monlam festival. In 1858 he was still Tsipon, but in 1860 he was already a Kalon and as such he is mentioned in passing under the dates of 1863 and 1864. In the 5th month of 1866 he was at Tashi Lhunpo, in charge of the memorial services held by the Panchen for the Hsien-feng emperor, who had died five years before. A more serious task, and the one for which he had actually accompanied the amban Ching-wen to Southern Tibet, was to collaborate with him in taking the proper measures to upheld Chinese neutrality during the Anglo-Bhutanese war. This was of cource a very belated move, as the war had ended in November 1865. On II.X. 1866, in the frame of a list of honours which comprised the whole Kashag and several other officials, he was granted the peacock feather. He was the Kalon Phalha mentioned in passing in 1873 and 1874. It appears that he always stayed at the capital and hardly ever went on mission to the outlying districts. He may have died c. 1875.\nIn 1857 a Phalha se was sent to Olga, to fetch the boy who was eventually recognised as the 12th Dalai Lama; Phalhawa, mentioned in passing in 1860, was appointed Tsipon in 1867. He may have been a brother of Padma Gyalpo.\nIn 1876 we find a Dapon Tashi Dargye, who was certainly a member of the Phalha family and was perhaps Padma Gyalpo's son. Early in that year he was sent him with the Chinese commissariat officer Chou chen to negotiate with the Bhutanese minsiter Ngodup Wangchuk; their task was to stiffen the back of the Bhutan government in refusing permission to the British to built roads through their country. On 22th August 1876 he was rewarded for his work by the grant of the 3rd-rank button, and in 17th February, 1877, the Peking Gazette published his appointment decree as Kalon. He is the Kalon Phalha who met the Panchen during the latter's visit to Lhasa in 1878. At the time of S. Chandra Das's visit in 1882 he was absent from the capital. Late in 1884 civil war broke out in Bhutan between the Desrid and the Ponlop of Tashi Chozong (Thimphu) on the one side, and the Ponlop of Paro and Trongsa on the other. The amban and the regent summoned a conference at Phagri, where they sent the commissioner Liu and Kalon Tashi Dargye to mediate (1885). As the two Ponlop remained defiant, a body of Tibetan troops moved into Bhutan. The Trongsa Ponlop Ugyen Wangchuk, the future first Maharaja of Bhutan, mad his peace in time; the Paro Ponlop resisted until, completely surrounded, he committed suicide. The trouble was settled, at least for the time being, at the Galing conference of 1886. Tashi Dargye was still in office in 1890 and died early in 1891.\nAnother Phalha nas, who appears as the Dapon Phalhawa who was posted at Shigatse in 1880 and 1881, and in 1882 acted as the Neshan of the Panchen going to the hot springs for curing his ailments. Apparently he was a brothe of Tashi Dargye, with whom he shared a wife, the Lhacham who extended such a generous protection to S. Chandra Das during his journey to Lhasa. Because of this imprudent act of kindness, the lady and the Dapon were exiled for seven years.\nPhalha Jedrung Jampa Chogyen (1865-1925), almost certainly a son of Padma Gyalpo's old age, was one of the most influential monk officials in the time of the 13th Dalai Lama. Having entered the ecclesiastical branch of the civil service in 1882 at the age of eighteen, he was the Tsedrung Jampa Chogyen who in 1888 was sent to Dorje drak to supervice the installation of the new Rigzin. In 1890 he was sent to Samye to built a chapel of Nodjin chenpo. In 1896 he was khanchung and headmaster of the school in the Potala (tselop gegen). In 1905 he was still a khandrung and his name was put forward as second choice for the post of Lalon Lama; but he was nt appointed. In 1920 and 1921 he was a khanchen and in 1922 he became Chikhyab khanpo, keeping that office till his death in 1925. \nIt is difficult to identify the Phalhawa mentioned without a title in 1899; he must be the son of the Kalon Phalha (Tashi Dargye) who in those years befriended Kawaguchi.\nA son of the Dapon Phalha who protested S. Chandra Das was the Phalha kushog whose life and official career is sketched by Chandra Dar, Bell, without ever mentioning his name. At 20 he was appointed Zongpon Shelkar; at 23 Sherpon; at 33 barley-tax collector; in June 1913 Tsipon; three years later he was concurrently sent to Kham to help the Dochi. And there he fell ill and died at the age of forty nine, in c. 1918.\nHis brother was Phalha se Sonam Wangyal (b.c. 1871), alias Dewan Bahadur Palhese, the friend of Sir Charles Bell, who speaks at length of him in all his books. He was still alive in Janurary 1935, but must have died soon after.\nThe Tsipon who died in c. 1918 had three male sons, of whom two died of smallpox in 1910. The surviving one, by name Phuntsok Namgyal (b. 1891) entered the service in 1909. He was first Kashod, then Kadron and as such was appointed Zongpon of Gyantse an office which he was holding in 1924; then he was Zholnyer and Zongpon of Tingkye; afterwards he becamce a member of the paymaster's office of Domad, and lastly Zongpon of Rinpung. He died \"in the time of the regent Rating Rinpoche\", i.e sometime between 1934 and 1941.\nHis son Thupten Oden (b. 1911) became timber steward in 1929, distributor of grain in Tsang 1935, Tsedron 1939, khanchung and governor of the North (Janchi) in August 1942. In 1947 he became Lord Chamberlain, an office which brought him in close contact with the Dalai Lama, whom be followed in 1950 to Yatung. He quitted this post in 1951, but remiained in close attendance to the Dalai Lama, whom he accompanied to Peking in 1955. Later the Chinese authorities accussed him of anti-Communist activities, relating chiefly to the years 1952, 1956 and 1957. In the 1959 he fled with the Dalai Lama to India, was for a time a minister in the Tibetan government in exile, and in 1964 became the personal representative of the Dalai Lama in Europe, residing in Switzerland and died sometime in 1975?.\nHis younger brother Dorje Wangchuk (b.c. 1915) was Chinpon chenmo in 1937, Rupon of the bodyguard in 1942, Dapon of the bodyguard in 1943. He is now in India.\n\n\n(Petech L., Aristocracy and Government in Tibet, p. 79-87, Roma 1973. Also see pha lha thub bstan 'od ldan, sku tshe'i lo rgyus hrag bsdus, bod kyi dpe mdzod khang gi ngag rgyun lo rgyus deb phreng gnyis pa,  1996 and Pha lha phogs dpon gi lo rgyus)"@en .
+}

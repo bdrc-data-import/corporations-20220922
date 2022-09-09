@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS132 {
+    bda:C11MS132  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS132 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/C11MS132.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS132 ;
+        adm:logEntry        bda:LG50C13016AF08C2B5 , bda:LG7B8F993266DA49C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG50C13016AF08C2B5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-21T16:15:03.106Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7B8F993266DA49C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:59:09.441Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS132  a         :Corporation ;
+        skos:prefLabel      "g.yu sgra/"@bo-x-ewts ;
+        :note               bdr:NTAC63F3B0B4DBD87E , bdr:NTB5AE2F0BEDAFD69F .
+    
+    bdr:NTAC63F3B0B4DBD87E
+        a                   :Note ;
+        :noteText           "It seems as if the Yudra clan had a non-Tibetan origin and they weren't ethnically Tibetan. The famed translator Rinchen Zangpo was a member of the Yudra clan."@en .
+    
+    bdr:NTB5AE2F0BEDAFD69F
+        a                   :Note ;
+        :noteText           "the early translator Rin chen bzang po is said to have been a member."@en .
+}

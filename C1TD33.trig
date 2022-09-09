@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C1TD33 {
+    bda:C1TD33  a           adm:AdminData ;
+        adm:adminAbout      bdr:C1TD33 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "89/C1TD33.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C1TD33 ;
+        adm:logEntry        bda:LG4A35A9A852DBAB63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A35A9A852DBAB63
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-29T18:19:41.043Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added members and note"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:C1TD33  a           :Corporation ;
+        skos:prefLabel      "rgya/"@bo-x-ewts , "Gya"@en ;
+        :corporationHasMember  bdr:CM2B634D87AD9155B1 , bdr:CM5DAC7D1FB2F9B3AF , bdr:CM6313552523EC017C ;
+        :note               bdr:NTD1064CA09E49CCC5 .
+    
+    bdr:CM2B634D87AD9155B1
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P909 .
+    
+    bdr:CM5DAC7D1FB2F9B3AF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P512 .
+    
+    bdr:CM6313552523EC017C
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2630 .
+    
+    bdr:NTD1064CA09E49CCC5
+        a                   :Note ;
+        :noteText           "The lineage of Ralung. The founder of Ralung Monastery and the Drukpa Kagyu tradition Tsangpa Gyare Yeshe Dorje was born to the Gya clan. \nAs noted in Miller, W.B. (2006) \"'Brug pa'i lo rgyus zur tsam: An Analysis of a Thirteenth Century Tibetan Buddhist Lineage History,\" Tibet Journal 31: 17-42.\n\nThe Gya is a clan from the Nyang region of Tsang, said to have descended from the Mukpo or \"dark\" branch of the Dong clan, and to have come from the Minyak region. \nAs noted in Gyilung Tashi Gyatso and Gyilung Thugchok Dorje: The Treasure of the Ancestral Clans of Tibet"@en .
+}

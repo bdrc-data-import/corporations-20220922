@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS198 {
+    bda:C11MS198  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS198 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/C11MS198.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS198 ;
+        adm:logEntry        bda:LG1895FECAF3CB96D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1895FECAF3CB96D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:08:43.463Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS198  a         :Corporation ;
+        skos:altLabel       "Che"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "lce/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMB42D55307B0B18E1 ;
+        :note               bdr:NTE16AD212E4A914B3 .
+    
+    bdr:CMB42D55307B0B18E1
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P0RK1222 .
+    
+    bdr:NTE16AD212E4A914B3
+        a                   :Note ;
+        :noteText           "The Che were one of the 18 divisions of the ancestral clan of Go. During Tibet's imperial period, members of the family were ministers and translators. Chetsun Sherab Jungne of the Che clan founded Zhalu monastery with the establishment of the Serkhang Tramo temple in 1040, so the monastery belonged to the Che lineage originally. Chetsun Sengge Wangchuk was born into this prominent clan in the 12th century."@en .
+}

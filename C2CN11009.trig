@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11009 {
+    bda:C2CN11009  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11009 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b7/C2CN11009.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11009 ;
+        adm:logEntry        bda:LG4167831BDAA6A40D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4167831BDAA6A40D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-24T12:59:58.631Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11009  a        :Corporation ;
+        skos:altLabel       "kong stod nyang po rgya nang gi gnubs kyi rigs/"@bo-x-ewts ;
+        skos:prefLabel      "nyang po rgya nang gnubs rigs/"@bo-x-ewts , "kong stod nyang po rgya nang into the gnubs lineage"@en ;
+        :corporationHasMember  bdr:CM988ADE407158C9F1 ;
+        :note               bdr:NT3A69CBBB7AB328E5 , bdr:NT72354FEEFA8555CF .
+    
+    bdr:CM988ADE407158C9F1
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P336 .
+    
+    bdr:NT3A69CBBB7AB328E5
+        a                   :Note ;
+        :noteText           "need to add region as kong po: G640"@en .
+    
+    bdr:NT72354FEEFA8555CF
+        a                   :Note ;
+        :noteText           "see also G1042"@en .
+}

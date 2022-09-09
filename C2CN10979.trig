@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN10979 {
+    bda:C2CN10979  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN10979 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9e/C2CN10979.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN10979 ;
+        adm:logEntry        bda:LG224622EFAE3BA3EC , bda:LGA74FDC891DC5637C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG224622EFAE3BA3EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-15T16:20:59.242Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA74FDC891DC5637C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-15T16:52:18.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN10979  a        :Corporation ;
+        skos:altLabel       "thu med/"@bo-x-ewts ;
+        skos:prefLabel      "thu med rgyal brgyud/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0D929FF9A1B656CA , bdr:CM853323AF41EA4DE6 , bdr:CMDFF8F063D149F95D ;
+        :note               bdr:NT9C617FBE58B99654 .
+    
+    bdr:CM0D929FF9A1B656CA
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P8LS12050 .
+    
+    bdr:CM853323AF41EA4DE6
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4249 .
+    
+    bdr:CMDFF8F063D149F95D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P8LS12047 .
+    
+    bdr:NT9C617FBE58B99654
+        a                   :Note ;
+        :noteText           "need to add region as mong gol: G584\n\nalso see place record about thu med: G1301"@en .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS141 {
+    bda:C11MS141  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS141 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/C11MS141.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS141 ;
+        adm:logEntry        bda:LG1E2FA1563D203652 , bda:LG2CD20B2B412AD1AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E2FA1563D203652
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:53:10.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2CD20B2B412AD1AE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-24T11:49:37.981Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS141  a         :Corporation ;
+        skos:altLabel       "'dru gdung rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "'dru rigs/"@bo-x-ewts , "Dru Clan"@en ;
+        :note               bdr:NT5087F51ADF288109 , bdr:NT775F1A61FF1EE06B .
+    
+    bdr:NT5087F51ADF288109
+        a                   :Note ;
+        :contentLocationStatement  "p. 154" ;
+        :noteSource         bdr:MW7499 ;
+        :noteText           "one of the early six divisions of family clans in tibet"@en .
+    
+    bdr:NT775F1A61FF1EE06B
+        a                   :Note ;
+        :noteText           "The Dru clan is one of the six early clans of Tibet. Dru was an important family of Bon supporters believed to have originated in Drusha (Gilgit), which was annexed by Tibet for a time beginning in the eighth century. The Dru palace, Namtong, was located in Tobgyel to the east of Shigatse and north of the Tsangpo river. Members of the Dru family were influential in promoting the study of philosophy through the Dzopuk, a Bon text.  Dru descendant Druje Yungdrung founded Yeru Wensaka monastery, which was to form the model of instruction and conduct for the later Menri monastery.  The Fifth Dalai Lama recognized the reincarnation of his teacher Panchen Lobzang Chogyen in the Dru family, leading to the transfer of their estate and wealth to Gelukpas. Eventually the entire family became followers the Geluk tradition. Until 1959, the Bon traditions of the Dru family were continuously followed in Tibet at Menri, and thereafter reestablished in India and Nepal."@en .
+}

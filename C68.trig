@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C68 {
+    bda:C68  a              adm:AdminData ;
+        adm:adminAbout      bdr:C68 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8d/C68.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C68 ;
+        adm:logEntry        bda:LG02629F14FE82390E , bda:LGF44DC96757FD90F2 , bda:LGFD17F4431D7CC4C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02629F14FE82390E
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-15T16:03:17.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF44DC96757FD90F2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFD17F4431D7CC4C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T14:15:57.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added another name"@en ;
+        adm:logWho          bdu:U00022 .
+    
+    bdr:C68  a              :Corporation ;
+        rdfs:comment        "sde dpon family"@en ;
+        skos:altLabel       "shar ka pa/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal rtse shar kha/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM1EC4B051A465B044 , bdr:CM7BA5032017ECD411 ;
+        :note               bdr:NTDDBA211970DFD207 .
+    
+    bdr:CM1EC4B051A465B044
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6904 .
+    
+    bdr:CM7BA5032017ECD411
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P6905 .
+    
+    bdr:NTDDBA211970DFD207
+        a                   :Note ;
+        :noteText           "princely family gtsang, ruled from their fort at rgyal rtse.\n \t\nThe Sharkhapa family was one of the princely families of Gyantse. Members of this family ruled a large area of Tsang provice from their fortress at Gyantse (rgyal rtse). Drubchen Kunga Lodro was born into the Sharkhapa family in 1365."@en .
+}

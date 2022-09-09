@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C57 {
+    bda:C57  a              adm:AdminData ;
+        adm:adminAbout      bdr:C57 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4e/C57.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C57 ;
+        adm:logEntry        bda:LGCB25BC0C2E8588C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCB25BC0C2E8588C0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C57  a              :Corporation ;
+        rdfs:comment        "monastic college"@en ;
+        skos:prefLabel      "se ra smad grwa tshang /"@bo-x-ewts ;
+        :corporationRegion  bdr:G2479 , bdr:G2480 , bdr:G2481 , bdr:G2482 , bdr:G395 ;
+        :note               bdr:NT82974FE14BDF8D86 .
+    
+    bdr:NT82974FE14BDF8D86
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "this college had 2,695 monks in 1959 with 38 incarnations\nit sent teaching and administrative heads to 5 ri khrod and 23 dgon lag"@en .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS190 {
+    bda:C11MS190  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS190 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ee/C11MS190.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS190 ;
+        adm:logEntry        bda:LG41887F1107FB5C59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG41887F1107FB5C59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T11:54:41.656Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS190  a         :Corporation ;
+        skos:altLabel       "Nyo"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "gnyos/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM3C3D2C21F2F42586 , bdr:CMA7326F5E7BC7063E , bdr:CMC51F40965BBFCCB7 ;
+        :note               bdr:NTCAFB496AFD110420 .
+    
+    bdr:CM3C3D2C21F2F42586
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P15 .
+    
+    bdr:CMA7326F5E7BC7063E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1693 .
+    
+    bdr:CMC51F40965BBFCCB7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3AG26 .
+    
+    bdr:NTCAFB496AFD110420
+        a                   :Note ;
+        :noteText           "The Nyo clan held religious and secular influence over the southern stretch of the Tibetan plateau, including parts of Bhutan, for a few centuries, beginning with the Gyaton Aryadeva's (rGya ston A rya de ba) offering of land to Nyo Lotsawa (gNyos lo tsa ba) in the 11th century."@en .
+}

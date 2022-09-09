@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C17 {
+    bda:C17  a              adm:AdminData ;
+        adm:adminAbout      bdr:C17 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "5e/C17.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C17 ;
+        adm:logEntry        bda:LG01D35C93ADFDB3E4 , bda:LG05DB00C65AD69264 , bda:LG38B2A5EF81A270FF , bda:LG6AC7BBCE666D09A2 , bda:LG7874C2DDF213AA61 , bda:LG797E0B2016FE9916 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01D35C93ADFDB3E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:58.124Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG05DB00C65AD69264
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-11T09:35:53.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG38B2A5EF81A270FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-11T14:45:28.417Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6AC7BBCE666D09A2
+        a                   adm:UpdateData ;
+        adm:logMessage      "added member and note"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7874C2DDF213AA61
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG797E0B2016FE9916
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-11T14:37:42.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added region"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:C17  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:altLabel       "kun bzang rtse (sku drag)"@bo-x-ewts ;
+        skos:prefLabel      "khe smad (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM377FC57B7783F984 , bdr:CMC7956ADF01FCE4AF , bdr:CMDC29D5DF5A840984 , bdr:CMFCFC385EDD6F8283 ;
+        :corporationRegion  bdr:G4802 ;
+        :note               bdr:NT741393FD8B383549 .
+    
+    bdr:CM377FC57B7783F984
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2332 .
+    
+    bdr:CMC7956ADF01FCE4AF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS259 .
+    
+    bdr:CMDC29D5DF5A840984
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS257 .
+    
+    bdr:CMFCFC385EDD6F8283
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS258 .
+    
+    bdr:NT741393FD8B383549
+        a                   :Note ;
+        :contentLocationStatement  "p. 92" ;
+        :noteSource         bdr:MW20167 ;
+        :noteText           "The Khemed is the name of their original estate in the Yartod district. They are also called Kunzangtse, which is the name of their house in Lhasa. The family is a fairly ancient one, its name occuring already in the time of the fifth Dalai Lama.\nKhemed Rabten Lingpa appears in 1754 and two years later was zongpon of Tsegang. Another man with the same name was appointed to arrange for the journey of the regent in 1778. A Tsedung Khemed was Tsamlen in 1788.\nKadrun Khemedpa was appointed Zongpon of Gongkar in 1815.\nExcept for these meagre pieces of information, the family led an obscure life during th whole of the 18th and 19th centuries. It came to the limelight only with Khemed Rinchen Wangyal (1874-1927), who entered service in 1894 and became a Tsipon in the early years of the present century, being mentioned as such in 1909. In the same year he was appointed co-head of the new Foreign Bureau, with the title of jasak. In 1914 he was appointed Kalon. On 26th March, 1921, he was abruptly dismissed and degraded to a simple senampa; the reasons for this were not quite clear, but had something to do with the trouble brewing between the monks and the army officers. In 1924 he was a mere offcial on agricultural duty (sonam dodampa). Later he was given back the title of jasak, but was never again appointed to high office. He was a scholar versed in history and literature.\nHis son Tsewang Dondup (1902-1967), usually known as Kunzangtse, was enrolled as a pupil of the finance school and 1920 entered government service. In 1924 he was a kadrung. Then he became a Chibpon chenpo, then a Tsanyer and Jomo Zongpon. In 1932 he was Neshan to Colonel Weir, Political Officer in Sikkim. In 1935 he was appointed Nagchu gopa and in 1938 Lachak. But then he fell out with the regent and on 22nd August 1939 the same scene as with his father was re-acted; he was abruptly dismissed and his official robe was removed at once, so that he had to send home for a broadcloth dress in which to go away. He was debarred from holding office till 1945, when he was appointed a rimshi. He seems to be have accompanied his brother-in-law Sonam Wangdu to Nanking in 1946. Later, perhaps in 1950, he was appointed Tsipon. In 1959 he tried to organise Tibetan resistance, then fled to India and died at Dharamsala in 1967.\nHis brother-in-law Sonam Wangdu (1901-1972) played a more important role. He came from the Zurkhang family, being the paternal uncle of Kalon Zurkhang, and came into the Kunzangtse family as magpa. He entered the service in 1919, and in 1920 he was a Kashod entrusted with presenting offerings at Samye and Ushangdo. In 1921 he was given military training in India and most of his subsquent career was in the military branch, although as late as 1924 he was a Kadron; concurrently he was Tsela Zongpon. Soon after he was appointed Dapon. However, in 1932 he was degraded and dismissed from the army. In 1934 he was appointed a Zholnyer and two years later he took part in the search for the reincarnation of the Dalai Lama in the Nagchu region. About 1938 he was again Dapon and was sent to inquire about the rebirth of the Panchen who was supported to have taken place at Tsawa Pashod gon. In 1940 he was the Neshan of Sir Basil Gould in his visit to Lhasa. In 1942 he was made head of the Salt and Tea Tax department. In 1946 he was a jasak and a member of the Tibetan delegation who went to Nanking and took a much discussed part, due apparently to sheer inexperience, in the compilation of the new constitution of the republic of China. In 1948 he was appointed commander-in-chief (magchi). In 1951 the Dalai Lama sent him from Yatung via India to Peking as a member of the delegation who was discussing terms with the Communist government; he was one of the signers of the agreement of 23rd May, 1951. He ceased to be magchi in 1957. After the revolt of 1959 he escaped to India through Bhutan and settled at Dharamsala, where he died on 14th June, 1972.\n\n\n(Petech L., Aristocracy and Government in Tibet, p. 92-95. Also see rang 'byung zangs kyi lcags published by Library of Tibetan Works and Archives, Dharamsala)"@en .
+}

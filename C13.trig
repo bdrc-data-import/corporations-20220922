@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C13 {
+    bda:C13  a              adm:AdminData ;
+        adm:adminAbout      bdr:C13 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "57/C13.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C13 ;
+        adm:logEntry        bda:LG38AE30D13A8A02F6 , bda:LG8C3E51E7C06932D7 , bda:LGECB62CF5310D426C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG38AE30D13A8A02F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-22T16:03:52.722Z"^^xsd:dateTime ;
+        adm:logMessage      "Lobsang Shastri"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8C3E51E7C06932D7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGECB62CF5310D426C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:58:54.766Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C13  a              :Corporation ;
+        rdfs:comment        "sku drag family"@en ;
+        skos:prefLabel      "ka shod (sku drag)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM0487930A7E00101A , bdr:CM232B627C74D10008 , bdr:CMB68BD611FBABE982 ;
+        :corporationRegion  bdr:G934 ;
+        :note               bdr:NT8B93D506400D5857 .
+    
+    bdr:CM0487930A7E00101A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS246 .
+    
+    bdr:CM232B627C74D10008
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS247 .
+    
+    bdr:CMB68BD611FBABE982
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P6714 .
+    
+    bdr:NT8B93D506400D5857
+        a                   :Note ;
+        :noteText           "The Kashod estate is in kharka near Gyangtse. This family did not properly belong to the nobility and had no importance whatsoever before the thirties of 20th century. It came to the force with Chogyal nyima (b. 1903), who entered government service in 1919 and was Shang zong zong dod in 1924. He held the post of Hor ci in 1927, when he stopped the Filchner and Roerich expedition in Nakchu. There were many complaints of his rapacity there. In 1934 he was a rim zhi, when he became invovled in the plot of Lungshar; he betrayed the conspiracy to Kalon Trimon and was formally dismissed, to give an apearance of impartiality to the proceedings; but in 1935 he got his reward, being apointed tsipon. In 1945 he was promoted Kalon. In 1947 he was suspected of complicity in the affair of the Rateng conspiracy. All Lhasa expected him to be arrested,but instead he was sent to command the attack on Sera monastery, so his great embarrassment. Although he remained Kalon, he was suspected of collusion wih the Kuomintang Chinese, who backed the former regent Rateng; and when the Kuomintang mission was evicted in 1949, kashodpa was degraded and ordered to be flogged and banished. He brought his way out of the flogging, but was sent out of Lhasa in white clothes as a sign of disgrace and was confined at Nedong. The Chinese recalled him to Lhasa in 1951. They did not reinstate him, made him a Director of Road Works. He was also given the title of taiji. It seems that in 1972 he was still alive in Tibet.\n(Petech L., Aristocracy and Government in Tibet : 1728-1959, p. 88-89, Roma 1973)\n\n\tPersonal name Chogyal Nyima Lhundup. Born about 1904. Was Hor chi (Commissioner of Hor province ) from which post he was relieved in 1932. After this he worked in the Drapchi hydro-electric factory near Lhasa. In 1934 after the demise of the 13th Dalai Lama he was degraded and imprisoned and charged with misconduct as Hor chi. Shortly after, he secured his release and was appointed Tsipon (Chief Accountant). Made an assistant to the Officer in charge of Drapchi hydro-electric factory in 1941, in addition to his duties as Tsipon. \n\tSon of Dangto pa, the youngest brother of Kasho pa, but has taken on the name of Kapsho pa. Born about 1925. Personal name Dondup Kapshod pa. Was educated at St. Joseph's College, Darjeeling, and speaks good English. Returned to Tibet in 1943 and has been undergoing training in the Tsi khang (Accountant Office) as a Tsi truk pa. Has been under instructions in wireless telegraphy at the British Mission since 13th February 1944. ( Richardson H., Who's Who in Tibet : 1945, pp. 20 )\n\tDangto pa, personal name migyur Dorjee. Born in 1912. Kapshodpa Tsipon's youngest brother. Appointed Tsa nyer (Grass Steward at Lhasa ) in 1937 and was guide to the British Mission, Lhasa from 1938 to 1941. Appointed Zongpon of Dozong in Central Tibet in 1941. ( Richardson H., Who's Who in Tibet : 1945, pp. 13 )"@en .
+}

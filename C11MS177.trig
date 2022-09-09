@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS177 {
+    bda:C11MS177  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS177 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1b/C11MS177.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS177 ;
+        adm:logEntry        bda:LG09B6AF9C65ABA21B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09B6AF9C65ABA21B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T11:27:47.296Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS177  a         :Corporation ;
+        skos:altLabel       "Zhak"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "bzhag"@bo-x-ewts ;
+        :corporationHasMember  bdr:CME3AAAD85F286CBCC ;
+        :note               bdr:NTD8F803B0FFFF193D .
+    
+    bdr:CME3AAAD85F286CBCC
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3AG3 .
+    
+    bdr:NTD8F803B0FFFF193D
+        a                   :Note ;
+        :noteText           "The Zhak clan was a traditionally Bonpo clan. Gomchen Barwa was born to this clan in the late 11th century in Upper Nyang (nyang stod)."@en .
+}

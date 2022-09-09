@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS218 {
+    bda:C11MS218  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS218 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0c/C11MS218.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS218 ;
+        adm:logEntry        bda:LG05D79A889E3A6953 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05D79A889E3A6953
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T16:22:00.406Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS218  a         :Corporation ;
+        skos:altLabel       "Bitsa"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "sbi tsha/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM83FE471154D216C1 ;
+        :note               bdr:NTE7EC0AD00FC4E7BC .
+    
+    bdr:CM83FE471154D216C1
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1382 .
+    
+    bdr:NTE7EC0AD00FC4E7BC
+        a                   :Note ;
+        :noteText           "The Bitsa clan was a prominent lineage in the Golok region. The Tenth Karmapa was recognized as the reincarnation of his predecessor in this family in the seventeenth century. The family was sold by a Golok chieftain to a Mongolian named Chakmo Gushri, who maintained control of the family for about a decade."@en .
+}

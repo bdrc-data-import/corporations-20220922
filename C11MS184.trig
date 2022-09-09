@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS184 {
+    bda:C11MS184  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS184 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6b/C11MS184.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS184 ;
+        adm:logEntry        bda:LGD07319C7DA494A9C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD07319C7DA494A9C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T11:42:53.473Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS184  a         :Corporation ;
+        skos:altLabel       "Dak"@bo-x-ewts ;
+        skos:prefLabel      "dwags/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM1C2387C895FF4F71 ;
+        :note               bdr:NTFDEBA3120A0C5434 .
+    
+    bdr:CM1C2387C895FF4F71
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P629 .
+    
+    bdr:NTFDEBA3120A0C5434
+        a                   :Note ;
+        :noteText           "In pre-imperial times, there were said to be 12 kingdoms or principalities. The Dak or Dakpo clan controlled one of these principalities called Dakyul Semo Druzhi (dwags yul se mo gru bzhi). During Songtsen Gampo's time, the area the Dakpo clan lived in was part of Yoru (gyo ru). Now the area is part of Gyaza dzong (rgya tsha) and Lung dzong (glang rdzong) in the TAR. Gampopa Sonam Rinchen, also known as Dakpo Lhaje, was from the Dakpo clan."@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C9 {
+    bda:C9  a               adm:AdminData ;
+        adm:adminAbout      bdr:C9 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "ef/C9.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C9 ;
+        adm:logEntry        bda:LG2141B17456380C81 , bda:LGA1DA91FD13D43334 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2141B17456380C81
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA1DA91FD13D43334
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-18T14:59:09.101Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C9  a               :Corporation ;
+        rdfs:comment        "sde dpon family"@en ;
+        skos:altLabel       "bla brang rnying pa (sde dpon)"@bo-x-ewts ;
+        skos:prefLabel      "thon pa (sde dpon)"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM2F5AFEBD255CE299 , bdr:CM706EADB9C0474773 , bdr:CM7346D0ACBFB18C3F , bdr:CM765E38C5A6902D4E , bdr:CM9F8A4C09EA8454B7 , bdr:CMB772F1D183F60E39 , bdr:CMC8549435B30027E8 , bdr:CMCFA24511660ABACE ;
+        :corporationRegion  bdr:G3600 ;
+        :note               bdr:NTA167ED4EDA5788E5 .
+    
+    bdr:CM2F5AFEBD255CE299
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS220 .
+    
+    bdr:CM706EADB9C0474773
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS201 .
+    
+    bdr:CM7346D0ACBFB18C3F
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS197 .
+    
+    bdr:CM765E38C5A6902D4E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS200 .
+    
+    bdr:CM9F8A4C09EA8454B7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS196 .
+    
+    bdr:CMB772F1D183F60E39
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS198 .
+    
+    bdr:CMC8549435B30027E8
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS199 .
+    
+    bdr:CMCFA24511660ABACE
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2LS202 .
+    
+    bdr:NTA167ED4EDA5788E5
+        a                   :Note ;
+        :contentLocationStatement  "p. 31, 33" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "The thon pa family had an estate in tsha rag shang and was the patron (dgon bdag) of the bud nub nunnery in rkyangs steng village of the tsha rag shang, chu shur rdzong\nalso the family was the patron of the padma gling ('phrul phu) nunnery of the bka' brgyud pa located in 'phrul phu grong tsho, tsha rag shang, chu shur rdzong, lha sa sa khul\n\nAnother name is Ladang Nyingpa, from the name of their house in Lhasa. In common parlance it is more usual than Thon, but is never met with in books or official documents. And yet it is an ancient one, because in a latter of the 30th March, 1733, addressed to Father Francesco Orazio della Penna, the Kalon Thonpa calls himself Ladang Nyingpa.\nThe Thon estate is at kharag in the lower Nyemo valley, and the family claims to be descendant from Thonmi Sambhota, the minister of kind Songtsen Gampo who in second quarter of the 7th century was responsible for the introduction of the Tibetan alphabet. He is said to have been buried in a funeral mound (bangso) at Pera in that region. Although this is one of the oldest Tibetan families, and mentioned in the times of the 5th and 6th Dalai Lama, it came to high office only in the times of Pholanas.\nThon Sichod Tseten appears in 1721 as Depon Thonpa and in 1723 is given the title of Zhabdrung, received to some families of the highest nobility. In 1724 he was among the collectors of the grain tax (do tral) and presented to the government 200 lance shafts.  In 1726 he was among the noblemen who received the Panchen on his visit to Lhasa. At the time of the civil war he was serving in the Lhasa army, but in the cource of a skirmish at Gyangkhar (end of 1727) he went over to Pholanas. At the end of the war (1728) he got his reward, being appointed as Kalon in the new government and being confirmed as such by the emperor; perhaps on this occassion or shortly afterwards he obtained also the title of jasak Ist class taiji. On the whole, however, he was a rather pale figure, appearing in our texts only on unavoidable formal and soleman occassions. Gyurmed Namgyal maintained him in office, and in 1748 the emperor rewarded him and the othe Kalon for their correct behaviour during the visit of the Zungar mission to Lhasa. He played no role in the upheaval of 1750, and was confirmed as Kalon in 1751. Early in the following year the emperor ordered that, should the Zungar try to invade Tibetn by the Nagtshang and Arig route, he was to gather the local miltia and organise the resistance; but the emergency never arose. Of his activity in the following years we know almost nothing. He was still alive when the Dalai Lama died in 1757 and he may also be the Kalon Thonpa mentioned without a personal name in 1762 and 1765.\nHe was succeded by his son Sizhi Wangdu, perhaps in 1765 or 1766; and if this date is correct, he is the Kalon Thonpa of 1768. We know that in 1722 he dissuaded Longdol Lama from going to Urga as Ula of the Jetsun Dampa Qutuqtu, as the regent wanted him to do. In 1777 his personal name occurs for the first time, and after that he is mentioned on formal occassions nearly every year, almost always on occassions that show a particularly close and cordial relation with the Panchen. Thus in 1781 he was sent to meet and accompany the train of the remains of the Panchen coming from Peking; in 1784 he was appointed by the Dalai Lama to represent him at the enthronment of the 4th Panchen; and late in the same year he went with the Dalai Lama to Tashi Lhunpo to dedicate the shrine of the 3rd Panchen. He died in the 9th month of 1787.\nIn the following year the emperor granted the seal of a jasak to the deceased's son Rabten Wangpo, but not his father's seat in te Kashag, neither then nor later. And indeed when Rabten Wangpo (Thonse jasak) accompanied the Kalon Yuthok to the Nepalese border, he held no official position. As usual, the later texts omit personal names, but it seems that he is identical with the Depon Thonpa mentioned in 1808 and 1813.\nA different person was the Phogpon Thon se who in 1808 accompanied the Panchen upon his return from Lhasa to Tashi Lhunpo, in 1809 was in charge of the Monlam festival and in 1814 accompanied the amban Hsi-ming and Kalon Phalha to a tour in Tsang. He was appointed Tsipon in 1815. Later he became a Kalon and appears as such for the first time in 1822; in that year he alternated with the other minister in attendence to the boy Dalai Lama, who was waiting at Nyethang for his formal recognition. Some months later he returned to Lhasa, where he witnessed the enthronment of the Dalai Lama. In 1823 he was sent to the Nagchu region and in 1824 on a tour of inspection of the domains (zhis kor). In 1825 he accompanied the junior amban Pao-ch'ang to another inspection and in 1827 the junior amban Kuang-ch'ing to Tsang. In the 5th month of 1829 he was sent again to the Nagchu region with some troops. The reasons for this movement are explained as follows; \"Mongols, living near Kokonor lake under a leader named Junang jasak, attacked and robbed a neighbouring tribe of Dranag Khasum. Regent Tshomon ling dispatched troops to the trouble spot, under the command of the council minister Kalon Thonpa and the general Dapon Sarjung. On the way, they recruited more troops from Derge and Dimchi Nyernga. A number of skirmishes  took place with the Mongols, and soon the tribe under Junang jasak surrendered. Junang jasak, together with his son and some other leaders, was taken to Lhasa to do homage and submit before the Dalai Lama. At the end of 1829 the emperor rewarded him with the peacock feather, which he received in Lhasa on 24. XII (c. 18th January, 1830). He went again to the Nagchu in 1830, but in 1831 and 1832 he was at the capital. In 1836 he accompanied the amban Ch'ing la to Tsang and in 1837 the newly arrived amban Kuan-shen pao to Todchog, which in this case means Western Tsang. After the death of the 10th Dalai Lama he was in charge of he funeral rites and of the construction of the tomb; we fiind him busy with these tasks in the 10th month of 1837 and in the 9th month of 1838. Then at last we came to know his personal name, because it is possible to identify him with the Kalon Tenzin Tsewang of he Chinese texts, who in 1840 was sent along with the darhan khenpo Losang Tinley Namgyal to deal with some trouble caused by the two incarnates of Dakyab; they came back at once without waiting for orders, for which they were deprived of their Chinese honours. In 1843, having redeemed themselves by accompanying the commissioners (to Dakyab), both were given abck their honour and titles. In that year we find Kalon Thonpa mentioned for the last time; he resigned soon after, probably in 1844 when the regent was deposed. He will still alive in 1848, when he (kasur thonpa) again went on tour (zhis kor). Inspite of this long administrative career, he was never entrusted with really important missions and his influence within the government seems to have been small. With the retirement the political position of the family began to deteriorate, slowly but unceasingly.\nTenzin Tsewang's son is met with the 1825 and 1827 as Kadron and in 1836 as kadrung, always in the shadow of his father. In 1837 he was appointed Lhanyer. He may be the same as the Thonpa se who was Dapon in 1846 and 1847.\nA monk official Thonpa se was appointed Tse traldewa in 1843.\nOne generation later, a Thonpa se was appointed U Dapon in 1861 and is apparently the Thonpa Dapon Namgyal Dondup who was among the victims of the upheaval of 1871.\nAfter that, the house of Thon faded away from active political life. We still find a Depon Thonpa in 1902. Thonpa se Dondup Gyalpo (b. 1887) entered the service in 1906 and was a Sherpang in 1924. And in 1938 the family still played a role in the display of the old-style army which was a part of the Monlam celebrations. Actually the old family seems to have distintegrated. \"There were several brothers, and perhaps due to differences among themselves they decided to separate, thereby dividing the family estates. One of the the brothers went as magpa in the Dekyid ling family, but that marriage produced no male issue. As for the Thonpa proper, a magpa was brought in from the family of Naschag. The present day Thonpa are the issue of that marriage\" (ZK).\nAnd this was the premature end of the political influence of one of the noblest families of Tibet.\n(Petech L., Aristocracy and Government in Tibet, p. 64-70, Roma 1973)"@en .
+}

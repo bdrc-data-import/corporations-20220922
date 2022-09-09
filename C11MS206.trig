@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS206 {
+    bda:C11MS206  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS206 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f2/C11MS206.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS206 ;
+        adm:logEntry        bda:LG34AFE79F0FEBCA7D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG34AFE79F0FEBCA7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:26:11.357Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS206  a         :Corporation ;
+        skos:altLabel       "Ram"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "ram/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMAD198E902E2EDF5D ;
+        :note               bdr:NT519B08EF77BD68A7 .
+    
+    bdr:CMAD198E902E2EDF5D
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P2CZ7866 .
+    
+    bdr:NT519B08EF77BD68A7
+        a                   :Note ;
+        :noteText           "The Ram clan is one of the eighteen tribes (tsho) of the Sino-Tibetan frontier. These are all sub-clans of the primary Go (sgo) clan, known also as the heavenly lineage of Go, which is considered one of the original Tibetan ancestral clans.  Nyima Gyeltsen, the ninth abbot of Narthang monastery, was born into this clan in Puteng Karma Kari in Tsang, not far from the monastery, in 1225."@en .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS134 {
+    bda:C11MS134  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS134 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "15/C11MS134.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS134 ;
+        adm:logEntry        bda:LG42DB91AA0946B0D9 , bda:LG60EC4921E1F2E7C5 , bda:LGD3FE4FC4A7A50054 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG42DB91AA0946B0D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-21T16:31:31.43Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG60EC4921E1F2E7C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T09:58:59.469Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD3FE4FC4A7A50054
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T16:57:51.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS134  a         :Corporation ;
+        skos:altLabel       "khyung po gdung /"@bo-x-ewts ;
+        skos:prefLabel      "khyung po/"@bo-x-ewts , "Khyungpo Clan"@en ;
+        :note               bdr:NT15E3202120E58D51 , bdr:NT5313FEED3B39F01A , bdr:NT56AFF42412BD8F64 , bdr:NT5E8AAB0DA3573F95 , bdr:NT8FE0DAC1FB330F2B .
+    
+    bdr:NT15E3202120E58D51
+        a                   :Note ;
+        :noteText           "A clan from the times of the Yarlung dynasty. It seems as if a number of the royal priests to the Yarlung kings were from the Khyungpo clan, which is associated with Bon. The Khyungpo clan traces its origins to a legendary ancestor, the Great Eagle (khyung chen), an emanation of a mythical Buddha of the upper realm, kun bzang rig snang. When this eagle flew back to the heavens, he left behind four eggs: white, black, yellow and green. The youths hatched from the first three eggs originated the Khyungpo tribes of Karu (dkar ru), Nakru (nag ru) and Sertsa (gser tsha). The fourth youth, Khyungpak Tramo (khyung 'phags khra mo), went to Gyarong (rgyal rong) where he originated the sub-clans of Lhakhyung (lha khyung), Mukhyung (mu khyung) and Khyunggotsok (khyung rgod tshog). The Khyungpak Tramo line produced the sage Milarepa and Khyungpo Neljor, the founder of the Shangpa Kagyu tradition, among other luminaries."@en .
+    
+    bdr:NT5313FEED3B39F01A
+        a                   :Note ;
+        :contentLocationStatement  "v. 01, p. 225-235" ;
+        :noteSource         bdr:MW23723 ;
+        :noteText           "see the khyung po'i gdung rabs"@en .
+    
+    bdr:NT56AFF42412BD8F64
+        a                   :Note ;
+        :noteText           "nomadic ancestors of Mi la ras pa per Gtsang smyon He ru ka"@en .
+    
+    bdr:NT5E8AAB0DA3573F95
+        a                   :Note ;
+        :contentLocationStatement  "v. 06, p. 425-441" ;
+        :noteSource         bdr:MW1PD96945 ;
+        :noteText           "on history of the ancestral decendents of the white, black, and yellow khyung po from the 39 tribes, branching from the nag ru chieftan - khyung po dkar nag gser gsum"@en .
+    
+    bdr:NT8FE0DAC1FB330F2B
+        a                   :Note ;
+        :noteText           "a group of lineages or clans associated with the khyung peoples"@en .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11008 {
+    bda:C2CN11008  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11008 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "73/C2CN11008.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11008 ;
+        adm:logEntry        bda:LG1AC11BDC68D19DA9 , bda:LG567549B8FA3E6D73 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AC11BDC68D19DA9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-24T12:32:04.97Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG567549B8FA3E6D73
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-29T12:54:55.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added member"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11008  a        :Corporation ;
+        skos:altLabel       "gtsang rong rin spungs chos rgyal gdung rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "rin spungs chos rgyal gdung rgyud/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM4188420CC126F134 , bdr:CM5265FF9F363E0640 , bdr:CMBF3BB9010DF980F7 ;
+        :note               bdr:NT3807749DEDE4BC52 , bdr:NT8216D40012AD05CA .
+    
+    bdr:CM4188420CC126F134
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4631 .
+    
+    bdr:CM5265FF9F363E0640
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P335 .
+    
+    bdr:CMBF3BB9010DF980F7
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4632 .
+    
+    bdr:NT3807749DEDE4BC52
+        a                   :Note ;
+        :noteText           "see also G1999"@en .
+    
+    bdr:NT8216D40012AD05CA
+        a                   :Note ;
+        :noteText           "need to add region as gtsang: G1300"@en .
+}

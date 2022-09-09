@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS220 {
+    bda:C11MS220  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS220 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fc/C11MS220.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS220 ;
+        adm:logEntry        bda:LG4F36CC7C9BBF3C2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F36CC7C9BBF3C2D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T16:25:32.566Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS220  a         :Corporation ;
+        skos:altLabel       "Go"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "sgo"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM23A1AA5A3F525A61 , bdr:CM93916E7D6EF7554E ;
+        :note               bdr:NT0872D16208D92566 .
+    
+    bdr:CM23A1AA5A3F525A61
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P676 .
+    
+    bdr:CM93916E7D6EF7554E
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3AG25 .
+    
+    bdr:NT0872D16208D92566
+        a                   :Note ;
+        :noteText           "One of the Five Great Ancestral Clans with Sekhyung Dra, Mutsa Ga, Apo Dong and Athang Dru. The Go Lharik (sgo lha rigs: meaning the heavenly line of the Go) were identified as the indigenous inhabitants of Do-khams. The Go split into eighteen divisions: Gar (‘gar), key (key) and Gol (‘gol); Sung (gsung), Ser (gser) and Drom (‘brom); the Ji (ji), Bum (‘bum) and Zhak (bzhag); the Shol (shol), Tak (stag) and Chang (‘phyang); the Che (gces), Seng (seng) and Ram (ram); and the Phuk (phug), Po (po) and Bu (bu)."@en .
+}

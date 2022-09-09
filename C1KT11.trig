@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C1KT11 {
+    bda:C1KT11  a           adm:AdminData ;
+        adm:adminAbout      bdr:C1KT11 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "8f/C1KT11.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C1KT11 ;
+        adm:logEntry        bda:LG2F69BE2CDFE59DAD , bda:LG61B882EBFE90BEC4 , bda:LG72103A35AD849AAC , bda:LGEA44B87C72254AB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F69BE2CDFE59DAD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-07T14:01:14.495Z"^^xsd:dateTime ;
+        adm:logMessage      "Created record of Nya (gnya') family"@en ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LG61B882EBFE90BEC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-07T15:16:09.884Z"^^xsd:dateTime ;
+        adm:logMessage      "Added member of Nya lineage"@en ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LG72103A35AD849AAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-07T14:21:14.649Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LGEA44B87C72254AB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-07T14:37:41.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:C1KT11  a           :Corporation ;
+        rdfs:comment        "lineage"@en ;
+        skos:prefLabel      "gnya'"@bo-x-ewts , "Nya"@en-x-mixed ;
+        :corporationHasMember  bdr:CM322DCC0ED907BA77 ;
+        :note               bdr:NT7705CFD43603017A , bdr:NTEEC817C37305E16D .
+    
+    bdr:CM322DCC0ED907BA77
+        a                   :CorporationMemberByBlood ;
+        :corporationMember  bdr:P4997 .
+    
+    bdr:NT7705CFD43603017A
+        a                   :Note ;
+        :contentLocationStatement  "p. 10" ;
+        :noteSource         bdr:MW1KG6089 ;
+        :noteText           "Family of gnya' ba chos bzang, one of the 9 Learned Tibetan physicians (bod sman mkhas pa mi dgu) from court of Tri Songdetsen"@en .
+    
+    bdr:NTEEC817C37305E16D
+        a                   :Note ;
+        :contentLocationStatement  "p. 301-302" ;
+        :noteSource         bdr:MW17722 ;
+        :noteText           "Considered ancestor of physicians in the Lhunding (lhun sdings) lineage of the Jangluk school (byang lugs) of medicine"@en .
+}

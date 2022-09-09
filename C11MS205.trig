@@ -1,0 +1,39 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS205 {
+    bda:C11MS205  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS205 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7e/C11MS205.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS205 ;
+        adm:logEntry        bda:LG3F461DCDB2676D70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3F461DCDB2676D70
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:20:21.468Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS205  a         :Corporation ;
+        skos:altLabel       "Tati Zhamar"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "pra ti zhwa dmar rigs/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMEDBD8D9937C29559 .
+    
+    bdr:CMEDBD8D9937C29559
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P3550 .
+}

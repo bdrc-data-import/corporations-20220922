@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS208 {
+    bda:C11MS208  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS208 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f4/C11MS208.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS208 ;
+        adm:logEntry        bda:LG20369C3FDE42CECB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20369C3FDE42CECB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T12:30:01.566Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS208  a         :Corporation ;
+        skos:altLabel       "Gyu"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "rgyus/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMBE82331034188E0B ;
+        :note               bdr:NT8016D9886BF88A81 .
+    
+    bdr:CMBE82331034188E0B
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1448 .
+    
+    bdr:NT8016D9886BF88A81
+        a                   :Note ;
+        :noteText           "The Gyu clan's most prominent member was the thirteenth century disciple of Karma Pakshi Orgyenpa Rinchen Pel, from whom the Orgyen Nyendrub teachings originate."@en .
+}

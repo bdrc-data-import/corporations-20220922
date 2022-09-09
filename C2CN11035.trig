@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11035 {
+    bda:C2CN11035  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11035 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8a/C2CN11035.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11035 ;
+        adm:logEntry        bda:LGE68AD3EEFEFEFED5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGE68AD3EEFEFEFED5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-29T12:42:08.672Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added 3 p# & G# with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11035  a        :Corporation ;
+        skos:altLabel       "mdo smad reb kong gser ljongs dben gnas seng ge rtse lcang lung gi ldong rigs/"@bo-x-ewts , "reb gong spyang lung ldong rigs/"@bo-x-ewts ;
+        skos:prefLabel      "reb kong lcang lung gi ldong rigs/"@bo-x-ewts , "mdo smad Reb kong Gser ljongs Dben gnas Sengge rtse Lcang lung in the Ldong rigs"@en ;
+        :corporationHasMember  bdr:CM22266622D1FEBBD6 , bdr:CM80F31AA17BD46B0A , bdr:CM9015682D3E9A9237 ;
+        :note               bdr:NT2FCC11B0943D63B2 .
+    
+    bdr:CM22266622D1FEBBD6
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4724 .
+    
+    bdr:CM80F31AA17BD46B0A
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P4723 .
+    
+    bdr:CM9015682D3E9A9237
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P273 .
+    
+    bdr:NT2FCC11B0943D63B2
+        a                   :Note ;
+        :noteText           "need to add region as reb gong: G2369"@en .
+}

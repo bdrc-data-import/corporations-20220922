@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS179 {
+    bda:C11MS179  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS179 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1e/C11MS179.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS179 ;
+        adm:logEntry        bda:LG93ADD9FA09E6F1C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG93ADD9FA09E6F1C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T11:31:02.104Z"^^xsd:dateTime ;
+        adm:logMessage      "created new corp."@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS179  a         :Corporation ;
+        skos:altLabel       "Welshul"@bo-x-phon-en-m-tbrc ;
+        skos:prefLabel      "dbal shul/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CMF060ADCD601E58C9 ;
+        :note               bdr:NTF079A22228C54C2D .
+    
+    bdr:CMF060ADCD601E58C9
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1640 .
+    
+    bdr:NTF079A22228C54C2D
+        a                   :Note ;
+        :noteText           "The clan name Welshul comes from the nomadic area Welshul in Amdo. According to some accounts, they may be descendents of the the Dong clan, one of the original ancestral clans. Traditionally, the Welshul clan acted as important leaders in nomadic communities comprised of multiple clans. A Welshul Ponchen (dpon chen), the most powerful leader in the community, would be responsible for handling land disputes, theft etc.."@en .
+}

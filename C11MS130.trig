@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C11MS130 {
+    bda:C11MS130  a         adm:AdminData ;
+        adm:adminAbout      bdr:C11MS130 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ab/C11MS130.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C11MS130 ;
+        adm:logEntry        bda:LG1D9CF6742B71C91B , bda:LGB034E5185CF60ED7 , bda:LGFFD22991A28295E5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D9CF6742B71C91B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T17:00:27.894Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB034E5185CF60ED7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-21T16:06:51.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added alt. spelling"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFFD22991A28295E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-21T16:02:05.997Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:C11MS130  a         :Corporation ;
+        skos:altLabel       "myang /"@bo-x-ewts ;
+        skos:prefLabel      "nyang /"@bo-x-ewts ;
+        :note               bdr:NT2EF8733FFA511730 .
+    
+    bdr:NT2EF8733FFA511730
+        a                   :Note ;
+        :noteText           "Also spelled nyang. In pre-imperial times, there were said to be 12 kingdoms or principalities. One of these was controlled by the Nyang clan. The clan lived in the Nyangtri (nyang khri) or Nyingtri (nying khri) area and took on the name of the area. The river was also called the Nyang river. Even during Tibet's imperial age, this illustrious clan remained powerful. Although Nyang Tingdzin Zangpo was one of Vimalamitra's closest disciples, the Nyang family was on the losing side during the so-called Samye Debate in the 8th century, siding with the Chinese religionists, whereas their more powerful rival, the Ba (sba / 'ba' / dba) family, supported the Indian Buddhists. King Tride Songtsen's home minister Nyang Trizang Legdruk (myang khri bzang legs drug) and foreign minister Nyang Lektsen (myang legs btsan) were both from the Nyang clan. Nyangrel Nyima Ozer was also from this clan."@en .
+}

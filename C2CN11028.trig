@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:C2CN11028 {
+    bda:C2CN11028  a        adm:AdminData ;
+        adm:adminAbout      bdr:C2CN11028 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/C2CN11028.trig" ;
+        adm:gitRepo         bda:GR0001 ;
+        adm:graphId         bdg:C2CN11028 ;
+        adm:logEntry        bda:LGDEE1180A294A26F4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGDEE1180A294A26F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-28T14:54:13.708Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added p# & G# with notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:C2CN11028  a        :Corporation ;
+        skos:altLabel       "mdo smad shis tshang be ri'i rigs/"@bo-x-ewts ;
+        skos:prefLabel      "shis tshang be ri'i rigs/"@bo-x-ewts ;
+        :corporationHasMember  bdr:CM108C0847C8B8AECF ;
+        :note               bdr:NT17D8C8A73AFD6BDA , bdr:NT2F0EA4C9F23792AA .
+    
+    bdr:CM108C0847C8B8AECF
+        a                   :CorporationMember ;
+        :corporationMember  bdr:P1740 .
+    
+    bdr:NT17D8C8A73AFD6BDA
+        a                   :Note ;
+        :noteText           "need to add region as mdo smad: G1202"@en .
+    
+    bdr:NT2F0EA4C9F23792AA
+        a                   :Note ;
+        :noteText           "see also G986"@en .
+}
